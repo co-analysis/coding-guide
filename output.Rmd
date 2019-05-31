@@ -1,0 +1,22 @@
+::: {.breadcrumbs}
+* [ACG](index.html)
+* Output
+:::
+
+# Output guidelines
+
+::: {.lead-para}
+Our output guidelines set out some principles for presenting results.
+:::
+
+> In pipeline: this still needs to be written.
+
+
+## tab 1
+
+content
+
+## tab 2
+
+more content
+

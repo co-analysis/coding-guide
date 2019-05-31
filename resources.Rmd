@@ -1,0 +1,22 @@
+::: {.breadcrumbs}
+* [ACG](index.html)
+* Resources
+:::
+
+# Other resources
+
+::: {.lead-para}
+This page provides links to other resources.
+:::
+
+> In pipeline: this still needs to be written.
+
+
+## tab 1
+
+content
+
+## tab 2
+
+more content
+

@@ -1,0 +1,23 @@
+::: {.breadcrumbs}
+* [ACG](index.html)
+* Style
+:::
+
+# Style guidelines
+
+::: {.lead-para}
+Our style guidelines set out how to write code for a project.
+:::
+
+> In pipeline: this still needs to be written.
+
+
+## tab 1
+
+content
+
+## tab 2
+
+more content
+
+
