@@ -6,17 +6,32 @@
 # Other resources
 
 ::: {.lead-para}
-This page provides links to other resources.
+This page provides links to other resources to that provide advice and guidance on coding for analytical projects, many of which have influenced this guide.
 :::
 
 > In pipeline: this still needs to be written.
 
 
-## tab 1
+#### Resources from other government departments and teams
+Other departments and teams across government have also been working on style guides and coding standards, including:
 
-content
+* [RAP website](https://ukgovdatascience.github.io/rap-website/)
+* [MoJ Analytical Services Coding Standards](https://github.com/moj-analytical-services/our-coding-standards)
+* [Data Science Project Coding Standards](https://datasciencecampus.github.io/coding-standards/) from the ONS Data Science Campus
+* [NHS Scotland ISD Methodology guides](https://www.isdscotland.org/About-ISD/Methodologies/)
 
-## tab 2
 
-more content
+#### Other style guides
+There are lots of style guides out there, but two in particular to note:
+
+* The [Tidyverse Style Guide](https://style.tidyverse.org/)
+* The [Google Style Guides](https://google.github.io/styleguide/), including specific guides for [R](https://google.github.io/styleguide/Rguide.xml), [Python](https://google.github.io/styleguide/pyguide.html), [HTML & CSS](https://google.github.io/styleguide/htmlcssguide.html) and [JavaScript](https://google.github.io/styleguide/jsguide.html)
+
+#### rOpenSci
+rOpenSci is a non-profit intiative that aims to promote open and reproducible research through shared data and software.
+
+* [Reproducibility Guide](http://ropensci.github.io/reproducibility-guide/)
+* [Package Development, Maintenance and Peer Review](http://ropensci.github.io/dev-guide/) book
+* Software Peer Review [process](https://ropensci.org/software-review/) and [explanatory blog post](https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science)
+* [Code review of the PHE fingertipsR package](https://github.com/ropensci/software-review/issues/168)
 
