@@ -1,0 +1,29 @@
+---
+output: 
+  govdown::govdown_document:
+    page_title: "ACG - Git and GitHub"
+---
+
+::: {.breadcrumbs}
+* [ACG](index.html)
+* [Workflow](workflow.html)
+* Git and GitHub
+:::
+
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
+# Version control using Git and GitHub
+
+::: {.lead-para}
+Use a lead paragraph for a short introduction to the page
+:::
+
+Use a warning message either "In pipeline" for placeholers or "In active development" for pages that are major works in progress.
+
+> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
+
+
+### Section heading
+Use the [`govdown`](https://ukgovdatascience.github.io/govdown/) guidelines to format the body of your text. Use the H1 heading markdown (`# Page Title`) for page title, section headings should use H3 markdown (`### Section Heading`).

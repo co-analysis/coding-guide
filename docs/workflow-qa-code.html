@@ -22,7 +22,7 @@
   gtag('config', 'UA-139844526-1');
 </script>
   <meta charset="utf-8" />
-  <title>ACG - Resources</title>
+  <title>ACG - QA and code review</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0c0c" />
 
@@ -3942,13 +3942,12 @@ color: #d14;
                   <!-- link name -->
                   Output
                 </a>
-              </li>            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+              </li>            <li class="govuk-header__navigation-item">
                 <a class="govuk-header__link" href="resources.html">
                   <!-- link name -->
                   Resources
                 </a>
               </li>
-  
             </ul>
           </nav>
   
@@ -3980,72 +3979,56 @@ color: #d14;
 <a href="index.html" class="govuk-breadcrumbs__link govuk-link">ACG</a>
 </li>
 <li class="govuk-breadcrumbs__list-item">
-Resources
+<a href="workflow.html" class="govuk-breadcrumbs__link govuk-link">Workflow</a>
+</li>
+<li class="govuk-breadcrumbs__list-item">
+QA and code review
 </li>
 </ol>
 </div>
-<h1 id="other-resources" class="govuk-heading-xl">Other resources</h1>
+<h1 id="qa-and-code-review" class="govuk-heading-xl">QA and code review</h1>
 <div>
 <p class="govuk-body-l">
-This page provides links to other resources to that provide advice and guidance on coding for analytical projects, many of which have influenced this guide.
+Use a lead paragraph for a short introduction to the page
+</p>
+</div>
+<p class="govuk-body">
+Use a warning message either “In pipeline” for placeholers or “In active development” for pages that are major works in progress.
+</p>
+<div class="govuk-inset-text">
+<p class="govuk-body">
+<span style="     color: #005EA5;">In pipeline: this still needs to be written.</span>
 </p>
 </div>
 <div class="govuk-inset-text">
 <p class="govuk-body">
-<span style="     color: #DF3034;">In active development: this is unfinished and links may not work.</span>
+<span style="     color: #DF3034;">In active development: this is unfinished and links may not work</span>
 </p>
 </div>
-<h4 id="resources-from-other-government-departments-and-teams" class="govuk-heading-s">Resources from other government departments and teams</h4>
+<h3 id="section-heading" class="govuk-heading-m">Section heading</h3>
 <p class="govuk-body">
-Other departments and teams across government have also been working on style guides and coding standards, including:
+Use the <a href="https://ukgovdatascience.github.io/govdown/" class="govuk-link"><code>govdown</code></a> guidelines to format the body of your text. Use the H1 heading markdown (<code># Page Title</code>) for page title, section headings should use H3 markdown (<code>### Section Heading</code>).
 </p>
-<ul class="govuk=list govuk-list--bullet">
-<li class="govuk-body">
-<a href="https://ukgovdatascience.github.io/rap-website/" class="govuk-link">RAP website</a>
-</li>
-<li class="govuk-body">
-<a href="https://ukgovdatascience.github.io/govdown/" class="govuk-link">Govdown</a> - make R Markdown look like GOV.UK
-</li>
-<li class="govuk-body">
-<a href="https://github.com/moj-analytical-services/our-coding-standards" class="govuk-link">MoJ Analytical Services Coding Standards</a>
-</li>
-<li class="govuk-body">
-<a href="https://datasciencecampus.github.io/coding-standards/" class="govuk-link">Data Science Project Coding Standards</a> from the ONS Data Science Campus
-</li>
-<li class="govuk-body">
-<a href="https://www.isdscotland.org/About-ISD/Methodologies/" class="govuk-link">NHS Scotland ISD Methodology guides</a>
-</li>
-</ul>
-<h4 id="other-style-guides" class="govuk-heading-s">Other style guides</h4>
+<h3 id="header-info-and-breadcrumbs" class="govuk-heading-m">Header info and breadcrumbs</h3>
 <p class="govuk-body">
-There are lots of style guides out there, but two in particular to note:
+At the top of the markdown template you will see this code:
 </p>
-<ul class="govuk=list govuk-list--bullet">
-<li class="govuk-body">
-The <a href="https://style.tidyverse.org/" class="govuk-link">Tidyverse Style Guide</a> (for R)
-</li>
-<li class="govuk-body">
-The <a href="https://google.github.io/styleguide/" class="govuk-link">Google Style Guides</a>, including specific guides for <a href="https://google.github.io/styleguide/Rguide.xml" class="govuk-link">R</a>, <a href="https://google.github.io/styleguide/pyguide.html" class="govuk-link">Python</a>, <a href="https://google.github.io/styleguide/htmlcssguide.html" class="govuk-link">HTML &amp; CSS</a> and <a href="https://google.github.io/styleguide/jsguide.html" class="govuk-link">JavaScript</a>
-</li>
-</ul>
-<h4 id="ropensci" class="govuk-heading-s">rOpenSci</h4>
+<pre class="app-tabs__container js-tabs__container"><code>---
+output: 
+  govdown::govdown_document:
+    page_title: &quot;ACG - Workflow&quot;
+---</code></pre>
 <p class="govuk-body">
-rOpenSci is a non-profit intiative that aims to promote open and reproducible research through shared data and software.
+This code (<code>page_title:</code>) sets the HMTL page title (i.e. what you see in the web browser title bar/tab heading). Make this short and simple. A good idea is to use the format: <code>ACG - Section - Page stub</code>
 </p>
-<ul class="govuk=list govuk-list--bullet">
-<li class="govuk-body">
-<a href="http://ropensci.github.io/reproducibility-guide/" class="govuk-link">Reproducibility Guide</a>
-</li>
-<li class="govuk-body">
-<a href="http://ropensci.github.io/dev-guide/" class="govuk-link">Package Development, Maintenance and Peer Review</a> book
-</li>
-<li class="govuk-body">
-Software Peer Review <a href="https://ropensci.org/software-review/" class="govuk-link">process</a> and <a href="https://numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science" class="govuk-link">explanatory blog post</a>
-</li>
-<li class="govuk-body">
-<a href="https://github.com/ropensci/software-review/issues/168" class="govuk-link">Code review of the PHE fingertipsR package</a>
-</li>
-</ul>
+<pre class="app-tabs__container js-tabs__container"><code>::: {.breadcrumbs}
+* [ACG](index.html)
+* [Section](section.html)
+* Page stub
+:::</code></pre>
+<p class="govuk-body">
+This section set the ‘breadcrumbs’ - the navigation links above the title. The first bullet should always be the ACG homepage (<code>index.html</code>). The second bullet should be the section (Workflow, Style, Output, Resources) and linked to the relevant file. The third bullet should be the page - keep this simple, ideally match it to the page stub you used for <code>page_title</code> above. The third bullet shouldn’t be linked to anything as it describes the current page you are on.
+</p>
     </main>
   </div>
 

@@ -52,24 +52,29 @@ Functions are code that you can call and use again - e.g. `mean(1, 2, 3, 4)` giv
 
 Functions are generally provided by packages or libraries, but can also be written by yourself - are you even a coder if you've not written a function.
 
-Functional programming in analysis is about thinking about your work as a series of functions that manipulate input(s) to produce output(s). Breaking your work down into functions makes it easier to write and develop your project, it also makes it easier for other people to review and understand your work.
+**Functional programming** in analysis is about thinking about your work as a series of functions that manipulate input(s) to produce output(s). Breaking your work down into functions makes it easier to write and develop your project, it also makes it easier for other people to review and understand your work.
+
+Read our detailed guide on using [functional programming](workflow-programming.html).
 
 
 ### Dependency management
 
-Ensuring reproducible research and analysis requires not only code, but ensuring that you are using the same/compatible versions of extensions (packages/libraries) - this is called dependency management.
+Ensuring reproducible research and analysis requires not only code, but ensuring that you are using the same/compatible versions of extensions (packages/libraries) - this is called **dependency management**.
 
 It is important to ensure that you document which versions of the base language and extensions are being used. It can also be useful to store your system information.
+
+Read our detailed guide on [dependency management](workflow-dependencies.html).
 
 
 ### Version control (git)
 
-Just as we use version control when writing documents, we should use version control when writing code. Rather than saving multiple versions of files (e.g. `code-draft1.file`, `code-draft2.file`, `code-final.file` and, `code-final-FINAL.file`) we use [git](https://git-scm.com/) to manage versioning. Think of it as "track changes" for code.
+Just as we use version control when writing documents, we should use **version control** when writing code. Rather than saving multiple versions of files (e.g. `code-draft1.file`, `code-draft2.file`, `code-final.file` and, `code-final-FINAL.file`) we use [git](https://git-scm.com/) to manage versioning. Think of it as "track changes" for code.
 
-Read our detailed guide on using [git and github]().
+Read our detailed guide on using [git and github](workflow-git.html).
 
 
 ### QA and code review
 
-[Quality assurance (QA) and code review]() are important parts of the project lifecycle.
+Quality assurance and code review are important parts of the project lifecycle - and an example of peer review. Within our projects we use **quality assurance** (or 'QA') to refer to verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc. While **code review** is about checking whether the code is written well and conforms to our core standards.
 
+Read our detailed guide on [QA and code review](workflow-qa-code.html) in analytical projects.
