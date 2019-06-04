@@ -3927,13 +3927,12 @@ color: #d14;
                   <!-- link name -->
                   Home
                 </a>
-              </li>            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+              </li>            <li class="govuk-header__navigation-item">
                 <a class="govuk-header__link" href="workflow.html">
                   <!-- link name -->
                   Workflow
                 </a>
-              </li>
-              <li class="govuk-header__navigation-item">
+              </li>            <li class="govuk-header__navigation-item">
                 <a class="govuk-header__link" href="style.html">
                   <!-- link name -->
                   Style
@@ -3980,85 +3979,55 @@ color: #d14;
 <a href="index.html" class="govuk-breadcrumbs__link govuk-link">ACG</a>
 </li>
 <li class="govuk-breadcrumbs__list-item">
-Workflow
+<a href class="govuk-breadcrumbs__link govuk-link">Section</a>
+</li>
+<li class="govuk-breadcrumbs__list-item">
+Page
 </li>
 </ol>
 </div>
-<h1 id="workflow-guidelines" class="govuk-heading-xl">Workflow guidelines</h1>
+<h1 id="article-template" class="govuk-heading-xl">Article template</h1>
 <div>
 <p class="govuk-body-l">
-Our workflow guidelines set out how you should structure and manage code in an analytical project.
+Use a lead paragraph for a short introduction to the page
+</p>
+</div>
+<p class="govuk-body">
+Use a warning message either “In pipeline” for placeholers or “In active development” for pages that are major works in progress.
+</p>
+<div class="govuk-inset-text">
+<p class="govuk-body">
+<span style="     color: #005EA5;">In pipeline: this still needs to be written.</span>
 </p>
 </div>
 <div class="govuk-inset-text">
 <p class="govuk-body">
-<span style="     color: #DF3034;">In active development: this is unfinished and links may not work.</span>
+<span style="     color: #DF3034;">In active development: this is unfinished and links may not work</span>
 </p>
 </div>
-<h3 id="project-based-working" class="govuk-heading-m">Project based working</h3>
+<h3 id="section-heading" class="govuk-heading-m">Section heading</h3>
 <p class="govuk-body">
-Analytical projects generally, but especially those using code, should be managed as a <span class="govuk-!-font-weight-bold">project</span>.
+Use the <a href="https://ukgovdatascience.github.io/govdown/" class="govuk-link"><code>govdown</code></a> guidelines to format the body of your text. Use the H1 heading markdown (<code># Page Title</code>) for page title, section headings should use H3 markdown (<code>### Section Heading</code>).
 </p>
+<h3 id="header-info-and-breadcrumbs" class="govuk-heading-m">Header info and breadcrumbs</h3>
 <p class="govuk-body">
-A project is a discrete piece of work/analysis that is self-contained and can be run on its own. It may rely on other work, data or specific packages (see dependency management), but assuming you have access to the other work, data or packages you ought to be able to run this code.
+At the top of the markdown template you will see this code:
 </p>
+<pre class="app-tabs__container js-tabs__container"><code>---
+output: 
+  govdown::govdown_document:
+    page_title: &quot;ACG - Workflow&quot;
+---</code></pre>
 <p class="govuk-body">
-Projects should be contained in separate, distinct, and well named, folders. Unless using version control, these project folders should be stored on the shared drive (the <code>S</code> drive, or <code>SCSPS</code>). The shared drive or GitHub repository should be the cannonical version of the code.
+This code (<code>page_title:</code>) sets the HMTL page title (i.e. what you see in the web browser title bar/tab heading). Make this short and simple. A good idea is to use the format: <code>ACG - Section - Page stub</code>
 </p>
+<pre class="app-tabs__container js-tabs__container"><code>::: {.breadcrumbs}
+* [ACG](index.html)
+* [Section](section.html)
+* Page stub
+:::</code></pre>
 <p class="govuk-body">
-RStudio has project-based working built into the IDE, see our detailed guide on <a href="workflow-rsprojects.html" class="govuk-link">RStudio projects</a>.
-</p>
-<h3 id="scripting" class="govuk-heading-m">Scripting</h3>
-<p class="govuk-body">
-A file containing code is called a script, the process of creating a script is called <span class="govuk-!-font-weight-bold">scripting</span>.
-</p>
-<p class="govuk-body">
-To help improve the readability of your code and enable others to more easily use and review your project you should avoid the ‘kitchen sink’ approach to scripting - that is, writing all your code in one single file. Instead break up your code into discrete chunks and save each of those as separate scripts. When using multiple scripts, do not put a link to <code>script1.file</code> at the start of <code>script2.file</code> instead use a master script that calls the separate scripts.
-</p>
-<p class="govuk-body">
-There is no particular convention on how to chunk up your code, but some good rules of thumb are:
-</p>
-<ul class="govuk=list govuk-list--bullet">
-<li class="govuk-body">
-Define and write functions in a separate script from function calls - this makes it much easier to load functions.
-</li>
-<li class="govuk-body">
-Think about the stages of your analysis (e.g. cleaning/processing, analysis/modelling, outputs).
-</li>
-<li class="govuk-body">
-Is there a simple name (beside the project name) that can easily explain the contents of the script and what it does (e.g. <code>data_merging.file</code>).
-</li>
-<li class="govuk-body">
-If your code was a book, think about each script as a separate chapter.
-</li>
-</ul>
-<h3 id="functional-programming" class="govuk-heading-m">Functional programming</h3>
-<p class="govuk-body">
-Functions are code that you can call and use again - e.g. <code>mean(1, 2, 3, 4)</code> gives the average (mean) of the numbers 1, 2, 3 and 4 or in this case 2.5.
-</p>
-<p class="govuk-body">
-Functions are generally provided by packages or libraries, but can also be written by yourself - are you even a coder if you’ve not written a function.
-</p>
-<p class="govuk-body">
-Functional programming in analysis is about thinking about your work as a series of functions that manipulate input(s) to produce output(s). Breaking your work down into functions makes it easier to write and develop your project, it also makes it easier for other people to review and understand your work.
-</p>
-<h3 id="dependency-management" class="govuk-heading-m">Dependency management</h3>
-<p class="govuk-body">
-Ensuring reproducible research and analysis requires not only code, but ensuring that you are using the same/compatible versions of extensions (packages/libraries) - this is called dependency management.
-</p>
-<p class="govuk-body">
-It is important to ensure that you document which versions of the base language and extensions are being used. It can also be useful to store your system information.
-</p>
-<h3 id="version-control-git" class="govuk-heading-m">Version control (git)</h3>
-<p class="govuk-body">
-Just as we use version control when writing documents, we should use version control when writing code. Rather than saving multiple versions of files (e.g. <code>code-draft1.file</code>, <code>code-draft2.file</code>, <code>code-final.file</code> and, <code>code-final-FINAL.file</code>) we use <a href="https://git-scm.com/" class="govuk-link">git</a> to manage versioning. Think of it as “track changes” for code.
-</p>
-<p class="govuk-body">
-Read our detailed guide on using <a href class="govuk-link">git and github</a>.
-</p>
-<h3 id="qa-and-code-review" class="govuk-heading-m">QA and code review</h3>
-<p class="govuk-body">
-<a href class="govuk-link">Quality assurance (QA) and code review</a> are important parts of the project lifecycle.
+This section set the ‘breadcrumbs’ - the navigation links above the title. The first bullet should always be the ACG homepage (<code>index.html</code>). The second bullet should be the section (Workflow, Style, Output, Resources) and linked to the relevant file. The third bullet should be the page - keep this simple, ideally match it to the page stub you used for <code>page_title</code> above. The third bullet shouldn’t be linked to anything as it describes the current page you are on.
 </p>
     </main>
   </div>

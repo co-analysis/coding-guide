@@ -22,7 +22,7 @@
   gtag('config', 'UA-139844526-1');
 </script>
   <meta charset="utf-8" />
-  <title>ACG - Workflow</title>
+  <title>CO Analysis &amp; Insight Analytical Coding Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b0c0c" />
 
@@ -3922,18 +3922,18 @@ color: #d14;
           <nav>
             <ul id="navigation" class="govuk-header__navigation " aria-label="Top Level Navigation">
               <!-- items, beginning with nav-item-active then nav-item-other -->
-                          <li class="govuk-header__navigation-item">
+                          <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
                 <a class="govuk-header__link" href="index.html">
                   <!-- link name -->
                   Home
                 </a>
-              </li>            <li class="govuk-header__navigation-item govuk-header__navigation-item--active">
+              </li>
+              <li class="govuk-header__navigation-item">
                 <a class="govuk-header__link" href="workflow.html">
                   <!-- link name -->
                   Workflow
                 </a>
-              </li>
-              <li class="govuk-header__navigation-item">
+              </li>            <li class="govuk-header__navigation-item">
                 <a class="govuk-header__link" href="style.html">
                   <!-- link name -->
                   Style
@@ -3974,92 +3974,81 @@ color: #d14;
 
   <div class="govuk-width-container">
     <main class="govuk-main-wrapper " id="main-content" role="main">
-            <div class="govuk-breadcrumbs">
-<ol class="govuk-breadcrumbs__list">
-<li class="govuk-breadcrumbs__list-item">
-<a href="index.html" class="govuk-breadcrumbs__link govuk-link">ACG</a>
-</li>
-<li class="govuk-breadcrumbs__list-item">
-Workflow
-</li>
-</ol>
-</div>
-<h1 id="workflow-guidelines" class="govuk-heading-xl">Workflow guidelines</h1>
+            <h1 id="analytical-coding-guide" class="govuk-heading-xl">Analytical Coding Guide</h1>
 <div>
 <p class="govuk-body-l">
-Our workflow guidelines set out how you should structure and manage code in an analytical project.
+This site provides the Cabinet Office Analysis &amp; Insight team’s guide for coding in analytical projects.
 </p>
 </div>
-<div class="govuk-inset-text">
 <p class="govuk-body">
-<span style="     color: #DF3034;">In active development: this is unfinished and links may not work.</span>
+The purpose of this guide is to provide simple advice about how to use code in our analysis. It is broken down into three sections: <span class="govuk-!-font-weight-bold">workflow</span>, <span class="govuk-!-font-weight-bold">style</span> and <span class="govuk-!-font-weight-bold">output</span>. This site is a ‘living document’ that will evolve as our approach develops/changes. While the guide is intended to be language independent, examples are more likely to be based on using <a href="https://www.r-project.org" class="govuk-link">R</a> or <a href="https://www.rstudio.com" class="govuk-link">R Studio</a>. Our approach to coding and analysis is particularly influenced by the <a href="https://tidyverse.org" class="govuk-link">Tidyverse</a>.
+</p>
+<p class="govuk-body">
+In addition to these guidelines, we also have a list of other <a href="resources.html" class="govuk-link">resources</a> that provide advice and guidance on coding for analytical projects, many of which have influenced this guide.
+</p>
+<h2 id="workflow" class="govuk-heading-l">Workflow</h2>
+<p class="govuk-body">
+Our <a href="workflow.html" class="govuk-link">workflow</a> guidelines set out how you should structure and manage code in an analytical project.
+</p>
+<ol class="govuk-list govuk-list--number">
+<li class="govuk-body">
+Project-based working
+</li>
+<li class="govuk-body">
+Dependencies and package management
+</li>
+<li class="govuk-body">
+Version control (git)
+</li>
+<li class="govuk-body">
+QA and code review
+</li>
+</ol>
+<h2 id="style" class="govuk-heading-l">Style</h2>
+<p class="govuk-body">
+Our <a href="style.html" class="govuk-link">style</a> guidelines set out how to write code for a project.
+</p>
+<ol class="govuk-list govuk-list--number">
+<li class="govuk-body">
+Naming conventions
+</li>
+<li class="govuk-body">
+Syntax
+</li>
+<li class="govuk-body">
+Pipe
+</li>
+<li class="govuk-body">
+Comments and documentation
+</li>
+<li class="govuk-body">
+Error messages
+</li>
+</ol>
+<h2 id="output" class="govuk-heading-l">Output</h2>
+<p class="govuk-body">
+Our <a href="output.html" class="govuk-link">output</a> guidelines set out some principles for presenting results.
+</p>
+<ol class="govuk-list govuk-list--number">
+<li class="govuk-body">
+Tables
+</li>
+<li class="govuk-body">
+Graphs
+</li>
+<li class="govuk-body">
+Slide decks
+</li>
+<li class="govuk-body">
+Publishing
+</li>
+</ol>
+<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+<div>
+<p class="govuk-body-s">
+This site was built using <a href="https://ukgovdatascience.github.io/govdown/" class="govuk-link">govdown</a>.
 </p>
 </div>
-<h3 id="project-based-working" class="govuk-heading-m">Project based working</h3>
-<p class="govuk-body">
-Analytical projects generally, but especially those using code, should be managed as a <span class="govuk-!-font-weight-bold">project</span>.
-</p>
-<p class="govuk-body">
-A project is a discrete piece of work/analysis that is self-contained and can be run on its own. It may rely on other work, data or specific packages (see dependency management), but assuming you have access to the other work, data or packages you ought to be able to run this code.
-</p>
-<p class="govuk-body">
-Projects should be contained in separate, distinct, and well named, folders. Unless using version control, these project folders should be stored on the shared drive (the <code>S</code> drive, or <code>SCSPS</code>). The shared drive or GitHub repository should be the cannonical version of the code.
-</p>
-<p class="govuk-body">
-RStudio has project-based working built into the IDE, see our detailed guide on <a href="workflow-rsprojects.html" class="govuk-link">RStudio projects</a>.
-</p>
-<h3 id="scripting" class="govuk-heading-m">Scripting</h3>
-<p class="govuk-body">
-A file containing code is called a script, the process of creating a script is called <span class="govuk-!-font-weight-bold">scripting</span>.
-</p>
-<p class="govuk-body">
-To help improve the readability of your code and enable others to more easily use and review your project you should avoid the ‘kitchen sink’ approach to scripting - that is, writing all your code in one single file. Instead break up your code into discrete chunks and save each of those as separate scripts. When using multiple scripts, do not put a link to <code>script1.file</code> at the start of <code>script2.file</code> instead use a master script that calls the separate scripts.
-</p>
-<p class="govuk-body">
-There is no particular convention on how to chunk up your code, but some good rules of thumb are:
-</p>
-<ul class="govuk=list govuk-list--bullet">
-<li class="govuk-body">
-Define and write functions in a separate script from function calls - this makes it much easier to load functions.
-</li>
-<li class="govuk-body">
-Think about the stages of your analysis (e.g. cleaning/processing, analysis/modelling, outputs).
-</li>
-<li class="govuk-body">
-Is there a simple name (beside the project name) that can easily explain the contents of the script and what it does (e.g. <code>data_merging.file</code>).
-</li>
-<li class="govuk-body">
-If your code was a book, think about each script as a separate chapter.
-</li>
-</ul>
-<h3 id="functional-programming" class="govuk-heading-m">Functional programming</h3>
-<p class="govuk-body">
-Functions are code that you can call and use again - e.g. <code>mean(1, 2, 3, 4)</code> gives the average (mean) of the numbers 1, 2, 3 and 4 or in this case 2.5.
-</p>
-<p class="govuk-body">
-Functions are generally provided by packages or libraries, but can also be written by yourself - are you even a coder if you’ve not written a function.
-</p>
-<p class="govuk-body">
-Functional programming in analysis is about thinking about your work as a series of functions that manipulate input(s) to produce output(s). Breaking your work down into functions makes it easier to write and develop your project, it also makes it easier for other people to review and understand your work.
-</p>
-<h3 id="dependency-management" class="govuk-heading-m">Dependency management</h3>
-<p class="govuk-body">
-Ensuring reproducible research and analysis requires not only code, but ensuring that you are using the same/compatible versions of extensions (packages/libraries) - this is called dependency management.
-</p>
-<p class="govuk-body">
-It is important to ensure that you document which versions of the base language and extensions are being used. It can also be useful to store your system information.
-</p>
-<h3 id="version-control-git" class="govuk-heading-m">Version control (git)</h3>
-<p class="govuk-body">
-Just as we use version control when writing documents, we should use version control when writing code. Rather than saving multiple versions of files (e.g. <code>code-draft1.file</code>, <code>code-draft2.file</code>, <code>code-final.file</code> and, <code>code-final-FINAL.file</code>) we use <a href="https://git-scm.com/" class="govuk-link">git</a> to manage versioning. Think of it as “track changes” for code.
-</p>
-<p class="govuk-body">
-Read our detailed guide on using <a href class="govuk-link">git and github</a>.
-</p>
-<h3 id="qa-and-code-review" class="govuk-heading-m">QA and code review</h3>
-<p class="govuk-body">
-<a href class="govuk-link">Quality assurance (QA) and code review</a> are important parts of the project lifecycle.
-</p>
     </main>
   </div>
 

@@ -1,3 +1,9 @@
+---
+output: 
+  govdown::govdown_document:
+    page_title: "ACG - Output"
+---
+
 ::: {.breadcrumbs}
 * [ACG](index.html)
 * Output
