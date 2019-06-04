@@ -1,0 +1,24 @@
+---
+output: 
+  govdown::govdown_document:
+    page_title: "ACG - Sitemap"
+---
+
+::: {.breadcrumbs}
+* [ACG](index.html)
+* Sitemap
+:::
+
+# Sitemap
+
+* [Home](index.html)
+  * [Workflow](workflow.html)
+    * [RStudio Projects](workflow-rspojects.html)
+    * [Functional programming](workflow-programming.html)
+    * [Dependency management](workflow-dependencies.html)
+    * [Version control using Git and GitHub](workflow-git.html)
+    * [QA and code review](workflow-qa-code.html)
+  * [Style](style.html)
+  * [Output](output.html)
+  * [Resources](resources.html)
+  * [Sitemap](sitemap.html)

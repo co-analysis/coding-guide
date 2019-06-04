@@ -37,4 +37,6 @@ Our [output](output.html) guidelines set out some principles for presenting resu
 
 ::: {.small-para}
 This site was built using [govdown](https://ukgovdatascience.github.io/govdown/).
+
+[Sitemap](sitemap.html)
 :::
