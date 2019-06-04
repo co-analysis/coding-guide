@@ -1,0 +1,33 @@
+---
+output: 
+  govdown::govdown_document:
+    page_title: "ACG - Style"
+---
+
+::: {.breadcrumbs}
+* [ACG](index.html)
+* Style
+:::
+
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
+# Style guidelines
+
+::: {.lead-para}
+Our style guidelines set out how to write code for a project.
+:::
+
+> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
+
+
+## tab 1
+
+content
+
+## tab 2
+
+more content
+
+

@@ -1,0 +1,55 @@
+---
+output: 
+  govdown::govdown_document:
+    page_title: "ACG - Workflow"
+---
+
+::: {.breadcrumbs}
+* [ACG](index.html)
+* [Section](section.html)
+* Page
+:::
+
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
+# Article template
+
+::: {.lead-para}
+Use a lead paragraph for a short introduction to the page
+:::
+
+Use a warning message either "In pipeline" for placeholers or "In active development" for pages that are major works in progress.
+
+> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
+
+> `r govtext("In active development: this is unfinished and links may not work", colour = "mellow_red")`
+
+
+### Section heading
+Use the [`govdown`](https://ukgovdatascience.github.io/govdown/) guidelines to format the body of your text. Use the H1 heading markdown (`# Page Title`) for page title, section headings should use H3 markdown (`### Section Heading`).
+
+### Header info and breadcrumbs
+At the top of the markdown template you will see this code:
+
+```
+---
+output: 
+  govdown::govdown_document:
+    page_title: "ACG - Workflow"
+---
+```
+
+This code (`page_title:`) sets the HMTL page title (i.e. what you see in the web browser title bar/tab heading). Make this short and simple. A good idea is to use the format: `ACG - Section - Page stub`
+
+```
+::: {.breadcrumbs}
+* [ACG](index.html)
+* [Section](section.html)
+* Page stub
+:::
+```
+
+This section set the 'breadcrumbs' - the navigation links above the title. The first bullet should always be the ACG homepage (`index.html`). The second bullet should be the section (Workflow, Style, Output, Resources) and linked to the relevant file. The third bullet should be the page - keep this simple, ideally match it to the page stub you used for `page_title` above. The third bullet shouldn't be linked to anything as it describes the current page you are on.
+
