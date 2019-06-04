@@ -3,19 +3,24 @@
 * Resources
 :::
 
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
 # Other resources
 
 ::: {.lead-para}
 This page provides links to other resources to that provide advice and guidance on coding for analytical projects, many of which have influenced this guide.
 :::
 
-> In pipeline: this still needs to be written.
+> `r govtext("In active development: this is unfinished and links may not work.", colour = "mellow_red")`
 
 
 #### Resources from other government departments and teams
 Other departments and teams across government have also been working on style guides and coding standards, including:
 
 * [RAP website](https://ukgovdatascience.github.io/rap-website/)
+* [Govdown](https://ukgovdatascience.github.io/govdown/) - make R Markdown look like GOV.UK
 * [MoJ Analytical Services Coding Standards](https://github.com/moj-analytical-services/our-coding-standards)
 * [Data Science Project Coding Standards](https://datasciencecampus.github.io/coding-standards/) from the ONS Data Science Campus
 * [NHS Scotland ISD Methodology guides](https://www.isdscotland.org/About-ISD/Methodologies/)
@@ -24,7 +29,7 @@ Other departments and teams across government have also been working on style gu
 #### Other style guides
 There are lots of style guides out there, but two in particular to note:
 
-* The [Tidyverse Style Guide](https://style.tidyverse.org/)
+* The [Tidyverse Style Guide](https://style.tidyverse.org/) (for R)
 * The [Google Style Guides](https://google.github.io/styleguide/), including specific guides for [R](https://google.github.io/styleguide/Rguide.xml), [Python](https://google.github.io/styleguide/pyguide.html), [HTML & CSS](https://google.github.io/styleguide/htmlcssguide.html) and [JavaScript](https://google.github.io/styleguide/jsguide.html)
 
 #### rOpenSci

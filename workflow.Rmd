@@ -3,15 +3,19 @@
 * Workflow
 :::
 
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
 # Workflow guidelines
 
 ::: {.lead-para}
 Our workflow guidelines set out how you should structure and manage code in an analytical project.
 :::
 
-> In active development: it is unfinished and links may not work.
+> `r govtext("In active development: this is unfinished and links may not work.", colour = "mellow_red")`
 
-## Project based working
+### Project based working
 
 Analytical projects generally, but especially those using code, should be managed as a **project**.
 
@@ -19,10 +23,10 @@ A project is a discrete piece of work/analysis that is self-contained and can be
 
 Projects should be contained in separate, distinct, and well named, folders. Unless using version control, these project folders should be stored on the shared drive (the `S` drive, or `SCSPS`). The shared drive or GitHub repository should be the cannonical version of the code.
 
-RStudio has project-based working built into the IDE, see our detailed guide on [RStudio projects]().
+RStudio has project-based working built into the IDE, see our detailed guide on [RStudio projects](workflow-rsprojects.html).
 
 
-## Scripting
+### Scripting
 
 A file containing code is called a script, the process of creating a script is called **scripting**.
 
@@ -36,7 +40,7 @@ There is no particular convention on how to chunk up your code, but some good ru
 * If your code was a book, think about each script as a separate chapter.
 
 
-## Functional programming
+### Functional programming
 
 Functions are code that you can call and use again - e.g. `mean(1, 2, 3, 4)` gives the average (mean) of the numbers 1, 2, 3 and 4 or in this case 2.5.
 
@@ -45,21 +49,21 @@ Functions are generally provided by packages or libraries, but can also be writt
 Functional programming in analysis is about thinking about your work as a series of functions that manipulate input(s) to produce output(s). Breaking your work down into functions makes it easier to write and develop your project, it also makes it easier for other people to review and understand your work.
 
 
-## Dependency management
+### Dependency management
 
 Ensuring reproducible research and analysis requires not only code, but ensuring that you are using the same/compatible versions of extensions (packages/libraries) - this is called dependency management.
 
 It is important to ensure that you document which versions of the base language and extensions are being used. It can also be useful to store your system information.
 
 
-## Version control (git)
+### Version control (git)
 
 Just as we use version control when writing documents, we should use version control when writing code. Rather than saving multiple versions of files (e.g. `code-draft1.file`, `code-draft2.file`, `code-final.file` and, `code-final-FINAL.file`) we use [git](https://git-scm.com/) to manage versioning. Think of it as "track changes" for code.
 
 Read our detailed guide on using [git and github]().
 
 
-## QA and code review
+### QA and code review
 
 [Quality assurance (QA) and code review]() are important parts of the project lifecycle.
 
