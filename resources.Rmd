@@ -9,17 +9,15 @@ output:
 * Resources
 :::
 
-``` {r include=FALSE}
-source("R/govtext.R")
-```
-
 # Other resources
 
 ::: {.lead-para}
 This page provides links to other resources to that provide advice and guidance on coding for analytical projects, many of which have influenced this guide.
 :::
 
-> `r govtext("In active development: this is unfinished and links may not work.", colour = "mellow_red")`
+::: {.warning}
+In development: this is unfinished and still being writen, links may not work.
+:::
 
 
 #### Resources from other government departments and teams

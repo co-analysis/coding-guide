@@ -9,18 +9,15 @@ output:
 * Output
 :::
 
-``` {r include=FALSE}
-source("R/govtext.R")
-```
-
-
 # Output guidelines
 
 ::: {.lead-para}
 Our output guidelines set out some principles for presenting results.
 :::
 
-> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
+::: {.warning}
+In pipeline: this still needs to be written.
+:::
 
 
 ## tab 1

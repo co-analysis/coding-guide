@@ -9,17 +9,15 @@ output:
 * Workflow
 :::
 
-``` {r include=FALSE}
-source("R/govtext.R")
-```
-
 # Workflow guidelines
 
 ::: {.lead-para}
 Our workflow guidelines set out how you should structure and manage code in an analytical project.
 :::
 
-> `r govtext("In active development: this is unfinished and links may not work.", colour = "mellow_red")`
+::: {.warning}
+In development: this is unfinished and still being writen, links may not work.
+:::
 
 ### Project based working
 

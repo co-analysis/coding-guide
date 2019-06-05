@@ -10,21 +10,15 @@ output:
 * QA and code review
 :::
 
-``` {r include=FALSE}
-source("R/govtext.R")
-```
-
 # QA and code review
 
 ::: {.lead-para}
 Use a lead paragraph for a short introduction to the page
 :::
 
-Use a warning message either "In pipeline" for placeholers or "In active development" for pages that are major works in progress.
-
-> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
-
-> `r govtext("In active development: this is unfinished and links may not work", colour = "mellow_red")`
+::: {.warning}
+In pipeline: this still needs to be written.
+:::
 
 
 ### Section heading
