@@ -9,12 +9,20 @@ output:
 * Style
 :::
 
+<<<<<<< HEAD
+=======
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
+>>>>>>> upstream/master
 # Style guidelines
 
 ::: {.lead-para}
 Our style guidelines set out how to write code for a project.
 :::
 
+<<<<<<< HEAD
 ::: {.warning}
 In pipeline: this still needs to be written.
 :::
@@ -25,6 +33,16 @@ In pipeline: this still needs to be written.
 content
 
 ### section 2
+=======
+> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
+
+
+## tab 1
+
+content
+
+## tab 2
+>>>>>>> upstream/master
 
 more content
 

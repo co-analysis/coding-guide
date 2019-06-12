@@ -10,12 +10,20 @@ output:
 * Page
 :::
 
+<<<<<<< HEAD
+=======
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
+>>>>>>> upstream/master
 # Article template
 
 ::: {.lead-para}
 Use a lead paragraph for a short introduction to the page
 :::
 
+<<<<<<< HEAD
 Use a warning message either "In pipeline" for placeholers or "In development" for pages that not yet in a completed state.
 
 ::: {.warning}
@@ -25,6 +33,13 @@ In pipeline: this still needs to be written.
 ::: {.warning}
 In development: this is unfinished and still being writen, links may not work.
 :::
+=======
+Use a warning message either "In pipeline" for placeholers or "In active development" for pages that are major works in progress.
+
+> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
+
+> `r govtext("In active development: this is unfinished and links may not work", colour = "mellow_red")`
+>>>>>>> upstream/master
 
 
 ### Section heading

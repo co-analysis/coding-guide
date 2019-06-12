@@ -9,15 +9,27 @@ output:
 * Output
 :::
 
+<<<<<<< HEAD
+=======
+``` {r include=FALSE}
+source("R/govtext.R")
+```
+
+
+>>>>>>> upstream/master
 # Output guidelines
 
 ::: {.lead-para}
 Our output guidelines set out some principles for presenting results.
 :::
 
+<<<<<<< HEAD
 ::: {.warning}
 In pipeline: this still needs to be written.
 :::
+=======
+> `r govtext("In pipeline: this still needs to be written.", colour = "govuk_blue")`
+>>>>>>> upstream/master
 
 
 ## tab 1
