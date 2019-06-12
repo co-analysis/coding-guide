@@ -11,12 +11,23 @@ In order to contribute to this repo you will need to install the following R pac
 * [`govstyle`](http://ukgovdatascience.github.io/govstyle/index.html)
 * [`kableExtra`](https://cran.r-project.org/package=kableExtra)
 
-You will also need `pandoc` version 2 or greater, check your version of `pandoc` by running the following code:
+#### Pandoc
+You will also need `pandoc` version 2 or greater, which is bundled with RStudio. If using the CO standard issue of RStudio then its likely you're using version 1.*. You can check your version of pandoc by running the following code:
 
 ``` r
 rmarkdown::pandoc_version()
 [1] ‘2.3.1’
 ```
+
+If you have Anaconda installed (this can be installed from the Software Centre), then you can use that to upgrade to pandoc version 2. In addition to upgrading the pandoc version, you'll also need to create a `.Renviron` file - in your main working directory that R/RStudio loads. You will need to change `«PATH TO PANDOC»` to the directory folder that contains the 2.* binary (.exe file on windows) of pandoc.
+
+``` r
+# Custom .Renviron file content:
+
+RSTUDIO_PANDOC = «PATH TO PANDOC»
+
+```
+
 
 ### Contributing
 
