@@ -4,26 +4,31 @@
 This site provides the Cabinet Office Analysis & Insight team's guide for coding in analytical projects.
 :::
 
-The purpose of this guide is to provide simple advice about how to use code in our analysis. It is broken down into three sections: **workflow**, **style** and **output**. This site is a 'living document' that will evolve as our approach develops/changes. While the guide is intended to be language independent, examples are more likely to be based on using [R](https://www.r-project.org) or [R Studio](https://www.rstudio.com). Our approach to coding and analysis is particularly influenced by the [Tidyverse](https://tidyverse.org).
+The purpose of this guide is to provide simple advice about how to use code in our analysis. It is broken down into three sections: **workflow**, **style** and **output**. This site is a 'living document' that will evolve as our approach develops/changes. While the guide is intended to be language independent, given our practice examples are more likely to be based on using [R](https://www.r-project.org) or [R Studio](https://www.rstudio.com). Our approach to coding and analysis is particularly influenced by the [Tidyverse](https://tidyverse.org).
 
-In addition to these guidelines, we also have a list of other [resources](resources.html) that provide advice and guidance on coding for analytical projects, many of which have influenced this guide.
+This guide isn't designed to provide a rulebook of 'hard' standards that must be followed, rather it provides advice and general guidelines to using code in analytical projects. There are many [other guides and resources](resources.html) developed by others, which provide more detailed information and have influenced this guide to more o. Each person and team also have their own individual style and perferences - this guide is designed to provide some common building blocks so that it is easier for our analysts to work together when coding.
+
 
 ## Workflow
 Our [workflow](workflow.html) guidelines set out how you should structure and manage code in an analytical project.
 
 1. Project-based working
-2. Dependencies and package management
-3. Version control (git)
-4. QA and code review
+1. Scripting
+1. Functional programming
+1. Dependency management
+1. Version control (git)
+1. Documentation
+1. QA and code review
 
 ## Style
 Our [style](style.html) guidelines set out how to write code for a project.
 
 1. Naming conventions
-2. Syntax
-3. Pipe
-4. Comments and documentation
-5. Error messages
+1. Code Flow
+1. Syntax
+1. Pipe
+1. Comments and documentation
+1. Error messages
 
 ## Output
 Our [output](output.html) guidelines set out some principles for presenting results.

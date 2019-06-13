@@ -4032,6 +4032,30 @@ Our workflow guidelines set out how you should structure and manage code in an a
 In development: this is unfinished and still being writen, links may not work.
 </strong>
 </div>
+<h4 id="table-of-contents" class="govuk-heading-s">Table of contents</h4>
+<ol class="govuk-list govuk-list--number">
+<li class="govuk-body">
+<a href="#project-based-working" class="govuk-link">Project based working</a>
+</li>
+<li class="govuk-body">
+<a href="#scripting" class="govuk-link">Scripting</a>
+</li>
+<li class="govuk-body">
+<a href="#functional-programming" class="govuk-link">Functional programming</a>
+</li>
+<li class="govuk-body">
+<a href="#dependency-management" class="govuk-link">Dependency management</a>
+</li>
+<li class="govuk-body">
+<a href="#version-control-git" class="govuk-link">Version control</a>
+</li>
+<li class="govuk-body">
+<a href="#documentation" class="govuk-link">Documentation</a>
+</li>
+<li class="govuk-body">
+<a href="#qa-and-code-review" class="govuk-link">QA and code review</a>
+</li>
+</ol>
 <h3 id="project-based-working" class="govuk-heading-m">Project based working</h3>
 <p class="govuk-body">
 Analytical projects generally, but especially those using code, should be managed as a <span class="govuk-!-font-weight-bold">project</span>.
@@ -4043,8 +4067,13 @@ A project is a discrete piece of work/analysis that is self-contained and can be
 Projects should be contained in separate, distinct, and well named, folders. Unless using version control, these project folders should be stored on the shared drive (the <code>S</code> drive, or <code>SCSPS</code>). The shared drive or GitHub repository should be the cannonical version of the code.
 </p>
 <p class="govuk-body">
-RStudio has project-based working built into the IDE, see our detailed guide on <a href="workflow-rsprojects.html" class="govuk-link">RStudio projects</a>.
+RStudio has project-based working built into the IDE, read the explainer on <a href="workflow-rsprojects.html" class="govuk-link">RStudio projects</a>.
 </p>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
 <h3 id="scripting" class="govuk-heading-m">Scripting</h3>
 <p class="govuk-body">
 A file containing code is called a script, the process of creating a script is called <span class="govuk-!-font-weight-bold">scripting</span>.
@@ -4069,6 +4098,11 @@ Is there a simple name (beside the project name) that can easily explain the con
 If your code was a book, think about each script as a separate chapter.
 </li>
 </ul>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
 <h3 id="functional-programming" class="govuk-heading-m">Functional programming</h3>
 <p class="govuk-body">
 Functions are code that you can call and use again - e.g. <code>mean(1, 2, 3, 4)</code> gives the average (mean) of the numbers 1, 2, 3 and 4 or in this case 2.5.
@@ -4080,8 +4114,13 @@ Functions are generally provided by packages or libraries, but can also be writt
 <span class="govuk-!-font-weight-bold">Functional programming</span> in analysis is about thinking about your work as a series of functions that manipulate input(s) to produce output(s). Breaking your work down into functions makes it easier to write and develop your project, it also makes it easier for other people to review and understand your work.
 </p>
 <p class="govuk-body">
-Read our detailed guide on using <a href="workflow-programming.html" class="govuk-link">functional programming</a>.
+Read the explainer on using <a href="workflow-programming.html" class="govuk-link">functional programming</a> for analysis.
 </p>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
 <h3 id="dependency-management" class="govuk-heading-m">Dependency management</h3>
 <p class="govuk-body">
 Ensuring reproducible research and analysis requires not only code, but ensuring that you are using the same/compatible versions of extensions (packages/libraries) - this is called <span class="govuk-!-font-weight-bold">dependency management</span>.
@@ -4090,22 +4129,49 @@ Ensuring reproducible research and analysis requires not only code, but ensuring
 It is important to ensure that you document which versions of the base language and extensions are being used. It can also be useful to store your system information.
 </p>
 <p class="govuk-body">
-Read our detailed guide on <a href="workflow-dependencies.html" class="govuk-link">dependency management</a>.
+Read the explainer on <a href="workflow-dependencies.html" class="govuk-link">dependency management</a>.
 </p>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
 <h3 id="version-control-git" class="govuk-heading-m">Version control (git)</h3>
 <p class="govuk-body">
 Just as we use version control when writing documents, we should use <span class="govuk-!-font-weight-bold">version control</span> when writing code. Rather than saving multiple versions of files (e.g. <code>code-draft1.file</code>, <code>code-draft2.file</code>, <code>code-final.file</code> and, <code>code-final-FINAL.file</code>) we use <a href="https://git-scm.com/" class="govuk-link">git</a> to manage versioning. Think of it as “track changes” for code.
 </p>
 <p class="govuk-body">
-Read our detailed guide on using <a href="workflow-git.html" class="govuk-link">git and github</a>.
+Read the explainer on using <a href="workflow-git.html" class="govuk-link">git and github</a>.
 </p>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
+<h3 id="documentation" class="govuk-heading-m">Documentation</h3>
+<p class="govuk-body">
+You must <span class="govuk-!-font-weight-bold">document</span> your code. We rarely do analysis on our own, and there will definitely be circumstances when someone else needs to use it: you’re on leave or off sick, or you’ve moved on to another team. Documentation ensures that it is easy to follow what the code you write does, and is essential if you are collaborating on a project with others. It can also be really helpful to yourself, when you come to repeat a piece of work having it documented will make it a lot easier to
+</p>
+<p class="govuk-body">
+Read the explainer on <a href="workflow-documentation.html" class="govuk-link">documentation</a>.
+</p>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
 <h3 id="qa-and-code-review" class="govuk-heading-m">QA and code review</h3>
 <p class="govuk-body">
-Quality assurance and code review are important parts of the project lifecycle - and an example of peer review. Within our projects we use <span class="govuk-!-font-weight-bold">quality assurance</span> (or ‘QA’) to refer to verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc. While <span class="govuk-!-font-weight-bold">code review</span> is about checking whether the code is written well and conforms to our core standards.
+Quality assurance and code review are important parts of the project lifecycle - and an example of peer review. Within this guide we use <span class="govuk-!-font-weight-bold">quality assurance</span> (or ‘QA’) to refer to verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc. While <span class="govuk-!-font-weight-bold">code review</span> is about checking whether the code is written well and conforms to our core standards.
 </p>
 <p class="govuk-body">
-Read our detailed guide on <a href="workflow-qa-code.html" class="govuk-link">QA and code review</a> in analytical projects.
+Read the explainer on <a href="workflow-qa-code.html" class="govuk-link">QA and code review</a> in analytical projects.
 </p>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
     </main>
   </div>
 
