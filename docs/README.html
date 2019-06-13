@@ -4119,11 +4119,18 @@ In order to contribute to this repo you will need to install the following R pac
 <a href="https://cran.r-project.org/package=kableExtra" class="govuk-link"><code>kableExtra</code></a>
 </li>
 </ul>
+<h4 id="pandoc" class="govuk-heading-s">Pandoc</h4>
 <p class="govuk-body">
-You will also need <code>pandoc</code> version 2 or greater, check your version of <code>pandoc</code> by running the following code:
+You will also need <code>pandoc</code> version 2 or greater, which is bundled with RStudio. If using the CO standard issue of RStudio then its likely you’re using version 1.*. You can check your version of pandoc by running the following code:
 </p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r app-tabs__container js-tabs__container"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1">rmarkdown<span class="op">::</span><span class="kw">pandoc_version</span>()</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">[<span class="dv">1</span>] ‘<span class="dv">2</span>.<span class="fl">3.1</span>’</a></code></pre></div>
+<p class="govuk-body">
+If you have Anaconda installed (this can be installed from the Software Centre), then you can use that to upgrade to pandoc version 2. In addition to upgrading the pandoc version, you’ll also need to create a <code>.Renviron</code> file - in your main working directory that R/RStudio loads. You will need to change <code>«PATH TO PANDOC»</code> to the directory folder that contains the 2.* binary (.exe file on windows) of pandoc.
+</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r app-tabs__container js-tabs__container"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># Custom .Renviron file content:</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">RSTUDIO_PANDOC =<span class="st"> </span>«PATH TO PANDOC»</a></code></pre></div>
 <h3 id="contributing" class="govuk-heading-m">Contributing</h3>
 <ol class="govuk-list govuk-list--number">
 <li class="govuk-body">

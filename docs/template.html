@@ -4065,6 +4065,19 @@ This code (<code>page_title:</code>) sets the HMTL page title (i.e. what you se
 <p class="govuk-body">
 This section set the ‘breadcrumbs’ - the navigation links above the title. The first bullet should always be the ACG homepage (<code>index.html</code>). The second bullet should be the section (Workflow, Style, Output, Resources) and linked to the relevant file. The third bullet should be the page - keep this simple, ideally match it to the page stub you used for <code>page_title</code> above. The third bullet shouldn’t be linked to anything as it describes the current page you are on.
 </p>
+<h3 id="table-of-contents" class="govuk-heading-m">Table of contents</h3>
+<p class="govuk-body">
+For long documents you should consider placing a table of contents at the top of the page (after the lead and introductory paragrah, but before the first section heading). Use a fourth-level heading (4 hashes: <code>####</code>) followed by an item list. Use regular markdown links <code>\[text](link)</code>, to link to a section using the name of section (starting with a hash, <code>#</code> and replace spaces and non-alphanumeric characters with a dash).
+</p>
+<pre class="app-tabs__container js-tabs__container"><code>#### Table of Contents
+1. [First section](#first-section)
+2. [Second section](#second-section)</code></pre>
+<p class="govuk-body">
+If using a table of contents, ensure you insert a link back to the table of contents at the end of each section.
+</p>
+<pre class="app-tabs__container js-tabs__container"><code>::: {.small-para}
+[\^ Back to table of contents](#table-of-contents)
+:::</code></pre>
     </main>
   </div>
 

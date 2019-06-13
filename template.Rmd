@@ -53,3 +53,21 @@ This code (`page_title:`) sets the HMTL page title (i.e. what you see in the web
 
 This section set the 'breadcrumbs' - the navigation links above the title. The first bullet should always be the ACG homepage (`index.html`). The second bullet should be the section (Workflow, Style, Output, Resources) and linked to the relevant file. The third bullet should be the page - keep this simple, ideally match it to the page stub you used for `page_title` above. The third bullet shouldn't be linked to anything as it describes the current page you are on.
 
+### Table of contents
+
+For long documents you should consider placing a table of contents at the top of the page (after the lead and introductory paragrah, but before the first section heading). Use a fourth-level heading (4 hashes: `####`) followed by an item list. Use regular markdown links `\[text](link)`, to link to a section using the name of section (starting with a hash, `#` and replace spaces and non-alphanumeric characters with a dash).
+
+```
+#### Table of Contents
+1. [First section](#first-section)
+2. [Second section](#second-section)
+```
+
+If using a table of contents, ensure you insert a link back to the table of contents at the end of each section.
+
+```
+::: {.small-para}
+[\^ Back to table of contents](#table-of-contents)
+:::
+```
+
