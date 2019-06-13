@@ -4027,37 +4027,222 @@ QA and code review
 <h1 id="qa-and-code-review" class="govuk-heading-xl">QA and code review</h1>
 <div>
 <p class="govuk-body-l">
-Use a lead paragraph for a short introduction to the page
+Quality assurance and code review are important parts of the project lifecycle. They ensure that your project does what it’s supposed to (QA), and can easily be followed by others (code review).
 </p>
 </div>
 <div class="govuk-warning-text"><span class="govuk-warning-text__icon" aria-hidden="true">!</span><strong class="govuk-warning-text__text"><span class="govuk-warning-text__assistive">Warning</span>
-In pipeline: this still needs to be written.
+In development: this is unfinished and still being writen, links may not work.
 </strong>
 </div>
-<h3 id="section-heading" class="govuk-heading-m">Section heading</h3>
+<h4 id="table-of-contents" class="govuk-heading-s">Table of Contents</h4>
+<ol class="govuk-list govuk-list--number">
+<li class="govuk-body">
+<a href="#quality-assurance" class="govuk-link">Quality assurance</a>
+</li>
+<li class="govuk-body">
+<a href="#code-review" class="govuk-link">Code review</a>
+</li>
+</ol>
+<h3 id="quality-assurance" class="govuk-heading-m">Quality assurance</h3>
 <p class="govuk-body">
-Use the <a href="https://ukgovdatascience.github.io/govdown/" class="govuk-link"><code>govdown</code></a> guidelines to format the body of your text. Use the H1 heading markdown (<code># Page Title</code>) for page title, section headings should use H3 markdown (<code>### Section Heading</code>).
+Quality assurance (or ‘QA’) is about verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc.
 </p>
-<h3 id="header-info-and-breadcrumbs" class="govuk-heading-m">Header info and breadcrumbs</h3>
 <p class="govuk-body">
-At the top of the markdown template you will see this code:
+Quality assurance should take place for all pieces of analysis that go beyond the team - where they go to customers or stakeholders. And especially when it is going (or will ultimately be going) to Ministers or Senior Officals. There is no single set way to undertake QA, for each piece of work you should consider what the appropriate level of QA - but as a rule of thumb the larger or more important the work, the more QA you probably need to do (but it’s not linear!).
 </p>
-<pre class="app-tabs__container js-tabs__container"><code>---
-output: 
-  govdown::govdown_document:
-    page_title: &quot;ACG - Workflow&quot;
----</code></pre>
 <p class="govuk-body">
-This code (<code>page_title:</code>) sets the HMTL page title (i.e. what you see in the web browser title bar/tab heading). Make this short and simple. A good idea is to use the format: <code>ACG - Section - Page stub</code>
+The central guidance on quality assurance in government analysis is set out in the <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government" class="govuk-link">Aqua Book</a>. The Aqua Book mandates that each department has a process in place for managing key analytical models, search “business critical models” (including the quotation marks) on the intranet for the Cabinet Office’s process and guidance.
 </p>
-<pre class="app-tabs__container js-tabs__container"><code>::: {.breadcrumbs}
-* [ACG](index.html)
-* [Section](section.html)
-* Page stub
-:::</code></pre>
 <p class="govuk-body">
-This section set the ‘breadcrumbs’ - the navigation links above the title. The first bullet should always be the ACG homepage (<code>index.html</code>). The second bullet should be the section (Workflow, Style, Output, Resources) and linked to the relevant file. The third bullet should be the page - keep this simple, ideally match it to the page stub you used for <code>page_title</code> above. The third bullet shouldn’t be linked to anything as it describes the current page you are on.
+The Aqua Book sets out four principles for QA:
 </p>
+<ul class="govuk=list govuk-list--bullet">
+<li class="govuk-body">
+<span class="govuk-!-font-weight-bold">Proportionality of response:</span> The extent of the analytical quality assurance effort should be proportionate in response to the risks associated with the intended use of the analysis. These risks include financial, legal, operational and reputational impacts. In addition, analysis that is frequently used to support a decision-making process may require a more comprehensive analytical quality assurance response.
+</li>
+<li class="govuk-body">
+<span class="govuk-!-font-weight-bold">Assurance throughout development:</span> Quality assurance considerations should be taken into account throughout the life cycle of the analysis and not just at the end. Effective communication is crucial when understanding the problem, designing the analytical approach, conducting the analysis and relaying the outputs.
+</li>
+<li class="govuk-body">
+<span class="govuk-!-font-weight-bold">Verification and validation:</span> Analytical quality assurance is more than checking that the analysis is error-free and satisfies its specification (verification). It must also include checks that the analysis is appropriate, i.e. fit for the purpose for which it is being used (validation).
+</li>
+<li class="govuk-body">
+<span class="govuk-!-font-weight-bold">Analysis with RIGOUR:</span> Quality analysis needs to be repeatable, independent, grounded in reality, objective, have understood and managed uncertainty, and the results should address the initial question robustly. In particular, it is important to accept that uncertainty is inherent within the inputs and outputs of any piece of analysis. It is important to establish how much we can rely upon the analysis for a given problem.
+</li>
+</ul>
+<p class="govuk-body">
+The Aqua Book’s RIGOUR model provides a helpful framework for thinking about how to go about QA’ing your project.
+</p>
+<table class="govuk-table">
+<caption class="govuk-table__caption"></caption>
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+<th class="govuk-table__header govuk-table__header--numeric" scope="col">
+Element
+</th>
+<th class="govuk-table__header" scope="col">
+Aqua Book explanation
+</th>
+<th class="govuk-table__header" scope="col">
+Possible QA considerations
+</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Repeatable
+</td>
+<td class="govuk-table__cell">
+For an analytical process to be considered ‘valid’ it might reasonably be expected that for the “same” inputs and constraints the analysis produces the “same” outputs. It is important to note that different analysts will consider the analytical problem differently, potentially resulting in differing results, however if any one approach is repeated the results should be as expected.
+</td>
+<td class="govuk-table__cell">
+Can a colleague repeat the analysis? If they use a different (but equally valid) approach can they get the same figures (e.g. do <code>a+a</code> and <code>2*a</code> give the same result)?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Independent
+</td>
+<td class="govuk-table__cell">
+To produce analysis that is free of prejudice or bias. In doing so, care should be taken to appropriately balance the views across all stakeholders and experts.
+</td>
+<td class="govuk-table__cell">
+Would the analysis stand up to external scrutiny? If someone else approached the initial question or problem would they use a similar approach to conduct the analysis
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Grounded in reality
+</td>
+<td class="govuk-table__cell">
+Quality analysis takes the commissioner and analyst on a journey as views and perceptions are challenged and connections are made between the analysis and its real consequences. Connecting with reality in this way guards against failing to properly grasp the context of the problem – which is being analysed.
+</td>
+<td class="govuk-table__cell">
+What (pre-)conditions influence the problem, policy area, or data? Are there any key variables or contextual facotrs that are missing?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Objective
+</td>
+<td class="govuk-table__cell">
+Effective engagement and suitable challenge reduces potential bias and enables the commissioner and the analyst to be clear about the interpretation of the analytical results.
+</td>
+<td class="govuk-table__cell">
+What explicit and implict assumptions are there in the analytical approach?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Uncertainty-managed
+</td>
+<td class="govuk-table__cell">
+Uncertainties have been identified, managed and communicated throughout the analytical process.
+</td>
+<td class="govuk-table__cell">
+Is there a clear log or description of uncertaininities and their potential impact on the input data or results? Are key caveats or limitations on interpreation clear in the write-up of the analysis?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Robust
+</td>
+<td class="govuk-table__cell">
+Provide the analytical result in the context of residual uncertainty and limitations in order to ensure it is used appropriately.
+</td>
+<td class="govuk-table__cell">
+Has sensitivity analysis been conducted to test assumptions and test uncertainty or model parameters?
+</td>
+</tr>
+</tbody>
+</table>
+<p class="govuk-body">
+Some <a href="https://www.gov.uk/government/collections/aqua-book-resources" class="govuk-link">example resources</a> have been published on GOV.UK.
+</p>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
+<h3 id="code-review" class="govuk-heading-m">Code review</h3>
+<p class="govuk-body">
+Code review is about checking whether the code written to run a piece of analysis is fit-for-purpose: does it conform to our coding standards, is it repeatable, is it secure?
+</p>
+<p class="govuk-body">
+There are many guides to code review [INSERT EXAMPLE] of software peer review [INSERT EXAMPLE].
+</p>
+<p class="govuk-body">
+Code review can take place at any stage of a project, but there are some important timepoints when code review is essential: before you publish a major version of code/analysis based on the code, when merging into the ‘master’ and ‘dev’ branches of a crucial git repository (e.g. R packages/Python libaries, scripts that are used by multiple projects). The following table lists the key things you should consider when asking for/conducting a code review.
+</p>
+<table class="govuk-table">
+<caption class="govuk-table__caption"></caption>
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+<th class="govuk-table__header govuk-table__header--numeric" scope="col">
+Element
+</th>
+<th class="govuk-table__header" scope="col">
+In practice…
+</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Readable
+</td>
+<td class="govuk-table__cell">
+Is the code easy to read, and follow? Is it easy to understand the flow of the code and what is happening? Are our general <a href="workflow.html" class="govuk-link">workflow</a>, <a href="style.html" class="govuk-link">style</a> and <a href="guidelines" class="govuk-link">output</a> being followed? Are file, variable and function names sensible?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Reproducible
+</td>
+<td class="govuk-table__cell">
+Can the code be run on other machines, and platforms and achieve the same results? Are file paths relative and contained within the project container?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Efficient
+</td>
+<td class="govuk-table__cell">
+Does the code achieve the goal in a reasonably efficient way? Is there effective memory management? Has an appropriate approach been taken to error handling and management?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Documented
+</td>
+<td class="govuk-table__cell">
+Are packages/libraries documented properly? Do user-facing functions have documentation that explains to the user what they do, what they need and what they output? Do internal functions have some supporting commentary to explain what they do? Is there sufficient commentary within scripts to assist readability/understanding?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Secure
+</td>
+<td class="govuk-table__cell">
+Does the code pose any information or technical security risks? Is there a possibility of personal data being leaked/compromised? If it relies of external packages, are these safe?
+</td>
+</tr>
+<tr class="govuk-table__row">
+<td class="govuk-table__cell govuk-table__cell--numeric">
+Tested
+</td>
+<td class="govuk-table__cell">
+Are functions evaluated by unit tests? Is it easy to test and verify separate code chunks?
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p class="govuk-body-s">
+<a href="#table-of-contents" class="govuk-link">^ Back to table of contents</a>
+</p>
+</div>
     </main>
   </div>
 

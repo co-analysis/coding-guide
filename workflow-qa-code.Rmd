@@ -13,37 +13,69 @@ output:
 # QA and code review
 
 ::: {.lead-para}
-Use a lead paragraph for a short introduction to the page
+Quality assurance and code review are important parts of the project lifecycle. They ensure that your project does what it's supposed to (QA), and can easily be followed by others (code review).
 :::
 
 ::: {.warning}
-In pipeline: this still needs to be written.
+In development: this is unfinished and still being writen, links may not work.
 :::
 
+#### Table of Contents
+1. [Quality assurance](#quality-assurance)
+2. [Code review](#code-review)
 
-### Section heading
-Use the [`govdown`](https://ukgovdatascience.github.io/govdown/) guidelines to format the body of your text. Use the H1 heading markdown (`# Page Title`) for page title, section headings should use H3 markdown (`### Section Heading`).
 
-### Header info and breadcrumbs
-At the top of the markdown template you will see this code:
+### Quality assurance
 
-```
----
-output: 
-  govdown::govdown_document:
-    page_title: "ACG - Workflow"
----
-```
+Quality assurance (or 'QA') is about verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc.
 
-This code (`page_title:`) sets the HMTL page title (i.e. what you see in the web browser title bar/tab heading). Make this short and simple. A good idea is to use the format: `ACG - Section - Page stub`
+Quality assurance should take place for all pieces of analysis that go beyond the team - where they go to customers or stakeholders. And especially when it is going (or will ultimately be going) to Ministers or Senior Officals. There is no single set way to undertake QA, for each piece of work you should consider what the appropriate level of QA - but as a rule of thumb the larger or more important the work, the more QA you probably need to do (but it's not linear!).
 
-```
-::: {.breadcrumbs}
-* [ACG](index.html)
-* [Section](section.html)
-* Page stub
+The central guidance on quality assurance in government analysis is set out in the [Aqua Book](https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government). The Aqua Book mandates that each department has a process in place for managing key analytical models, search "business critical models" (including the quotation marks) on the intranet for the Cabinet Office's process and guidance.
+
+The Aqua Book sets out four principles for QA:
+
+* **Proportionality of response:** The extent of the analytical quality assurance effort should be proportionate in response to the risks associated with the intended use of the analysis. These risks include financial, legal, operational and reputational impacts. In addition, analysis that is frequently used to support a decision-making process may require a more comprehensive analytical quality assurance response.
+* **Assurance throughout development:** Quality assurance considerations should be taken into account throughout the life cycle of the analysis and not just at the end. Effective communication is crucial when understanding the problem, designing the analytical approach, conducting the analysis and relaying the outputs.
+* **Verification and validation:** Analytical quality assurance is more than checking that the analysis is error-free and satisfies its specification (verification). It must also include checks that the analysis is appropriate, i.e. fit for the purpose for which it is being used (validation).
+* **Analysis with RIGOUR:** Quality analysis needs to be repeatable, independent, grounded in reality, objective, have understood and managed uncertainty, and the results should address the initial question robustly. In particular, it is important to accept that uncertainty is inherent within the inputs and outputs of any piece of analysis. It is important to establish how much we can rely upon the analysis for a given problem.
+
+The Aqua Book's RIGOUR model provides a helpful framework for thinking about how to go about QA'ing your project.
+
+| Element | Aqua Book explanation | Possible QA considerations |
+|--------:|---------|---------|
+| Repeatable | For an analytical process to be considered ‘valid’ it might reasonably be expected that for the “same” inputs and constraints the analysis produces the “same” outputs. It is important to note that different analysts will consider the analytical problem differently, potentially resulting in differing results, however if any one approach is repeated the results should be as expected. | Can a colleague repeat the analysis? If they use a different (but equally valid) approach can they get the same figures (e.g. do `a+a` and `2*a` give the same result)? |
+| Independent | To produce analysis that is free of prejudice or bias. In doing so, care should be taken to appropriately balance the views across all stakeholders and experts. | Would the analysis stand up to external scrutiny? If someone else approached the initial question or problem would they use a similar approach to conduct the analysis |
+| Grounded in reality | Quality analysis takes the commissioner and analyst on a journey as views and perceptions are challenged and connections are made between the analysis and its real consequences. Connecting with reality in this way guards against failing to properly grasp the context of the problem – which is being analysed. | What (pre-)conditions influence the problem, policy area, or data? Are there any key variables or contextual facotrs that are missing? |
+| Objective | Effective engagement and suitable challenge reduces potential bias and enables the commissioner and the analyst to be clear about the interpretation of the analytical results. | What explicit and implict assumptions are there in the analytical approach? |
+| Uncertainty-managed | Uncertainties have been identified, managed and communicated throughout the analytical process. | Is there a clear log or description of uncertaininities and their potential impact on the input data or results? Are key caveats or limitations on interpreation clear in the write-up of the analysis? |
+| Robust | Provide the analytical result in the context of residual uncertainty and limitations in order to ensure it is used appropriately. | Has sensitivity analysis been conducted to test assumptions and test uncertainty or model parameters? |
+
+Some [example resources](https://www.gov.uk/government/collections/aqua-book-resources) have been published on GOV.UK.
+
+::: {.small-para}
+[\^ Back to table of contents](#table-of-contents)
 :::
-```
 
-This section set the 'breadcrumbs' - the navigation links above the title. The first bullet should always be the ACG homepage (`index.html`). The second bullet should be the section (Workflow, Style, Output, Resources) and linked to the relevant file. The third bullet should be the page - keep this simple, ideally match it to the page stub you used for `page_title` above. The third bullet shouldn't be linked to anything as it describes the current page you are on.
+### Code review
 
+Code review is about checking whether the code written to run a piece of analysis is fit-for-purpose: does it conform to our coding standards, is it repeatable, is it secure?
+
+There are many guides to code review [INSERT EXAMPLE] of software peer review [INSERT EXAMPLE].
+
+Code review can take place at any stage of a project, but there are some important timepoints when code review is essential: before you publish a major version of code/analysis based on the code, when merging into the 'master' and 'dev' branches of a crucial git repository (e.g. R packages/Python libaries, scripts that are used by multiple projects). The following table lists the key things you should consider when asking for/conducting a code review.
+
+
+| Element | In practice... |
+|--------:|----------------|
+| Readable | Is the code easy to read, and follow? Is it easy to understand the flow of the code and what is happening? Are our general [workflow](workflow.html), [style](style.html) and [output](guidelines) being followed? Are file, variable and function names sensible? |
+| Reproducible | Can the code be run on other machines, and platforms and achieve the same results? Are file paths relative and contained within the project container? |
+| Efficient | Does the code achieve the goal in a reasonably efficient way? Is there effective memory management? Has an appropriate  approach been taken to error handling and management? |
+| Documented | Are packages/libraries documented properly? Do user-facing functions have documentation that explains to the user what they do, what they need and what they output? Do internal functions have some supporting commentary to explain what they do? Is there sufficient commentary within scripts to assist readability/understanding? |
+| Secure | Does the code pose any information or technical security risks? Is there a possibility of personal data being leaked/compromised? If it relies of external packages, are these safe? |
+| Tested | Are functions evaluated by unit tests? Is it easy to test and verify separate code chunks? |
+
+
+::: {.small-para}
+[\^ Back to table of contents](#table-of-contents)
+:::
