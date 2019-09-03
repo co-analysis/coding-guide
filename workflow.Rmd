@@ -20,13 +20,13 @@ In development: this is unfinished and still being writen, links may not work.
 :::
 
 #### Table of contents
-1. [Project based working](#project-based-working)
+1. [Project based working](#project-based-working) (read the [explainer](workflow-rsprojects.html))
 1. [Scripting](#scripting)
-1. [Functional programming](#functional-programming)
-1. [Dependency management](#dependency-management)
-1. [Version control](#version-control-git)
+1. [Functional programming](#functional-programming) (read the [explainer](workflow-programming.html))
+1. [Dependency management](#dependency-management) (read the [explainer](workflow-dependencies.html))
+1. [Version control](#version-control-git) (read the [explainer](workflow-git.html))
 1. [Documentation](#documentation)
-1. [QA and code review](#qa-and-code-review)
+1. [QA and code review](#qa-and-code-review) (read the [explainer](workflow-qa-code.html))
 
 ### Project based working
 
