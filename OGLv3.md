@@ -1,8 +1,6 @@
 # Open Government Licence v3.0
 
-::: {style="align:right"}
-![OGL logo](http://www.nationalarchives.gov.uk/images/infoman/ogl-symbol-41px-retina-black.png)
-:::
+<img align="right" src="http://www.nationalarchives.gov.uk/images/infoman/ogl-symbol-41px-retina-black.png" alt="OGL logo">
 
 (C) CROWN COPYRIGHT 2019
 
