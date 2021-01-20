@@ -2,7 +2,9 @@
 
 <img align="right" src="http://www.nationalarchives.gov.uk/images/infoman/ogl-symbol-41px-retina-black.png" alt="OGL logo">
 
-(C) CROWN COPYRIGHT 2019
+**&copy; CROWN COPYRIGHT 2021**
+
+&nbsp;
 
 The material in this repository is [Crown Copyright](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/), all content is available under the [**Open Government Licence version v3.0**](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/), except where otherwise stated.
 
