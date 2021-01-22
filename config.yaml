@@ -1,4 +1,4 @@
-baseURL: https://coanalysis.github.io/coding-guide/
+baseURL: https://co-analysis.github.io/coding-guide/
 languageCode: en-gb
 title: Analytical Coding
 theme: govukhugo
@@ -15,4 +15,4 @@ params:
   logotext: ACG
   product: Analytical Coding Guide
   phase: alpha
-  feedbackurl: https://coanalysis.github.io/coding-guide/issues/
+  feedbackurl: https://co-analysis.github.io/coding-guide/issues/
