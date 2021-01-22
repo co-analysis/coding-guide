@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Analytical Coding</title>
-    <link>https://coanalysis.github.io/coding-guide/categories/</link>
+    <link>https://co-analysis.github.io/coding-guide/categories/</link>
     <description>Recent content in Categories on Analytical Coding</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-gb</language><atom:link href="https://coanalysis.github.io/coding-guide/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language><atom:link href="https://co-analysis.github.io/coding-guide/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

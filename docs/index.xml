@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home Page on Analytical Coding</title>
-    <link>https://coanalysis.github.io/coding-guide/</link>
+    <link>https://co-analysis.github.io/coding-guide/</link>
     <description>Recent content in Home Page on Analytical Coding</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://coanalysis.github.io/coding-guide/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://co-analysis.github.io/coding-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About this guide</title>
-      <link>https://coanalysis.github.io/coding-guide/about/</link>
+      <link>https://co-analysis.github.io/coding-guide/about/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://coanalysis.github.io/coding-guide/about/</guid>
+      <guid>https://co-analysis.github.io/coding-guide/about/</guid>
       <description>About page</description>
     </item>
     
     <item>
       <title>Project containers</title>
-      <link>https://coanalysis.github.io/coding-guide/workflow/projects/</link>
+      <link>https://co-analysis.github.io/coding-guide/workflow/projects/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://coanalysis.github.io/coding-guide/workflow/projects/</guid>
+      <guid>https://co-analysis.github.io/coding-guide/workflow/projects/</guid>
       <description>Analytical projects generally, but especially those using code, should be managed as a project.
 A project is a discrete piece of work/analysis that is self-contained and can be run on its own. It may rely on other work, data or specific packages (see dependency management), but assuming you have access to the other work, data or packages you ought to be able to run this code.
 Projects should be contained in separate, distinct, and well named, folders.</description>
@@ -29,10 +29,10 @@ Projects should be contained in separate, distinct, and well named, folders.</de
     
     <item>
       <title>QA and code review</title>
-      <link>https://coanalysis.github.io/coding-guide/workflow/qa/</link>
+      <link>https://co-analysis.github.io/coding-guide/workflow/qa/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://coanalysis.github.io/coding-guide/workflow/qa/</guid>
+      <guid>https://co-analysis.github.io/coding-guide/workflow/qa/</guid>
       <description>Quality assurance and code review are important parts of the project lifecycle. They ensure that your project does what it&amp;rsquo;s supposed to (QA), and can easily be followed by others (code review).
 Quality assurance Quality assurance (or &amp;lsquo;QA&amp;rsquo;) is about verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc.
 Quality assurance should take place for all pieces of analysis that go beyond the team - where they go to customers or stakeholders.</description>
