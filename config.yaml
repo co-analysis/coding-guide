@@ -1,0 +1,18 @@
+baseURL: https://coanalysis.github.io/coding-guide/
+languageCode: en-gb
+title: Analytical Coding
+theme: govukhugo
+publishDir: docs
+canonifyurls: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  govuk: false
+  logotext: ACG
+  product: Analytical Coding Guide
+  phase: alpha
+  feedbackurl: https://coanalysis.github.io/coding-guide/issues/
