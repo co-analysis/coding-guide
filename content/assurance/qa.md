@@ -1,5 +1,5 @@
 ---
-title: "QA and code review"
+title: "Quality assurance"
 date: 2021-01-22
 type: post
 summary: "QA summary goes here"
