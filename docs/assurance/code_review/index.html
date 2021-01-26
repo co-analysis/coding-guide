@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   
   
-  <title>Analytical Coding Guide | QA and code review</title>
+  <title>Analytical Coding Guide | Code review</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b0c0c">
 
@@ -111,13 +111,6 @@
                 
 
                 
-                <li class="nav-item"><a class="govuk-body-s govuk-link govuk-link--no-visited-state nav-active"
-                                href="https://co-analysis.github.io/coding-guide/workflow/qa/">QA and code review</a></li>
-                
-
-                
-
-                
 
                 <li class="nav-section "><a class="govuk-body-s" href="https://co-analysis.github.io/coding-guide/code_style/">2. Code style</a>
                 </li>
@@ -154,6 +147,20 @@
                 <li class="nav-section "><a class="govuk-body-s" href="https://co-analysis.github.io/coding-guide/assurance/">5. Assurance</a>
                 </li>
 
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-body-s govuk-link govuk-link--no-visited-state nav-active"
+                                href="https://co-analysis.github.io/coding-guide/assurance/code_review/">Code review</a></li>
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-body-s govuk-link govuk-link--no-visited-state nav-link"
+                                href="https://co-analysis.github.io/coding-guide/assurance/qa/">QA and code review</a></li>
+                
 
                 
 
@@ -195,67 +202,11 @@
 
 </nav></div>
                 <div class="dashboard-content">
-<h1 class="govuk-heading-xl">QA and code review</h1>
+<h1 class="govuk-heading-xl">Code review</h1>
 
 <div class="govuk-body">
 
-    <p>Quality assurance and code review are important parts of the project lifecycle. They ensure that your project does what it&rsquo;s supposed to (QA), and can easily be followed by others (code review).</p>
-<h2 id="quality-assurance">Quality assurance</h2>
-<p>Quality assurance (or &lsquo;QA&rsquo;) is about verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc.</p>
-<p>Quality assurance should take place for all pieces of analysis that go beyond the team - where they go to customers or stakeholders. And especially when it is going (or will ultimately be going) to Ministers or Senior Officials. There is no single set way to undertake QA, for each piece of work you should consider what the appropriate level of QA - but as a rule of thumb the larger or more important the work, the more QA you probably need to do (but it&rsquo;s not linear!).</p>
-<p>The central guidance on quality assurance in government analysis is set out in the <a href="https://www.gov.uk/government/publications/the-aqua-book-guidance-on-producing-quality-analysis-for-government">Aqua Book</a>. The Aqua Book mandates that each department has a process in place for managing key analytical models, search &ldquo;business critical models&rdquo; (including the quotation marks) on the intranet for the Cabinet Office&rsquo;s process and guidance.</p>
-<p>The Aqua Book sets out four principles for QA:</p>
-<ul>
-<li><strong>Proportionality of response:</strong> The extent of the analytical quality assurance effort should be proportionate in response to the risks associated with the intended use of the analysis. These risks include financial, legal, operational and reputational impacts. In addition, analysis that is frequently used to support a decision-making process may require a more comprehensive analytical quality assurance response.</li>
-<li><strong>Assurance throughout development:</strong> Quality assurance considerations should be taken into account throughout the life cycle of the analysis and not just at the end. Effective communication is crucial when understanding the problem, designing the analytical approach, conducting the analysis and relaying the outputs.</li>
-<li><strong>Verification and validation:</strong> Analytical quality assurance is more than checking that the analysis is error-free and satisfies its specification (verification). It must also include checks that the analysis is appropriate, i.e. fit for the purpose for which it is being used (validation).</li>
-<li><strong>Analysis with RIGOUR:</strong> Quality analysis needs to be repeatable, independent, grounded in reality, objective, have understood and managed uncertainty, and the results should address the initial question robustly. In particular, it is important to accept that uncertainty is inherent within the inputs and outputs of any piece of analysis. It is important to establish how much we can rely upon the analysis for a given problem.</li>
-</ul>
-<p>The Aqua Book&rsquo;s RIGOUR model provides a helpful framework for thinking about how to go about QA&rsquo;ing your project.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:right">Element</th>
-<th>Aqua Book explanation</th>
-<th>Possible QA considerations</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:right">Repeatable</td>
-<td>For an analytical process to be considered ‘valid’ it might reasonably be expected that for the “same” inputs and constraints the analysis produces the “same” outputs. It is important to note that different analysts will consider the analytical problem differently, potentially resulting in differing results, however if any one approach is repeated the results should be as expected.</td>
-<td>Can a colleague repeat the analysis? If they use a different (but equally valid) approach can they get the same figures (e.g. do <code>a+a</code> and <code>2*a</code> give the same result)?</td>
-</tr>
-<tr>
-<td style="text-align:right">Independent</td>
-<td>To produce analysis that is free of prejudice or bias. In doing so, care should be taken to appropriately balance the views across all stakeholders and experts.</td>
-<td>Would the analysis stand up to external scrutiny? If someone else approached the initial question or problem would they use a similar approach to conduct the analysis</td>
-</tr>
-<tr>
-<td style="text-align:right">Grounded in reality</td>
-<td>Quality analysis takes the commissioner and analyst on a journey as views and perceptions are challenged and connections are made between the analysis and its real consequences. Connecting with reality in this way guards against failing to properly grasp the context of the problem – which is being analysed.</td>
-<td>What (pre-)conditions influence the problem, policy area, or data? Are there any key variables or contextual facotrs that are missing?</td>
-</tr>
-<tr>
-<td style="text-align:right">Objective</td>
-<td>Effective engagement and suitable challenge reduces potential bias and enables the commissioner and the analyst to be clear about the interpretation of the analytical results.</td>
-<td>What explicit and implict assumptions are there in the analytical approach?</td>
-</tr>
-<tr>
-<td style="text-align:right">Uncertainty-managed</td>
-<td>Uncertainties have been identified, managed and communicated throughout the analytical process.</td>
-<td>Is there a clear log or description of uncertaininities and their potential impact on the input data or results? Are key caveats or limitations on interpreation clear in the write-up of the analysis?</td>
-</tr>
-<tr>
-<td style="text-align:right">Robust</td>
-<td>Provide the analytical result in the context of residual uncertainty and limitations in order to ensure it is used appropriately.</td>
-<td>Has sensitivity analysis been conducted to test assumptions and test uncertainty or model parameters?</td>
-</tr>
-</tbody>
-</table>
-<p>Some <a href="https://www.gov.uk/government/collections/aqua-book-resources">example resources</a> have been published on GOV.UK.</p>
-<h2 id="code-review">Code review</h2>
-<p>Code review is about checking whether the code written to run a piece of analysis is fit-for-purpose: does it conform to our coding standards, is it repeatable, is it secure?</p>
+    <p>Code review is about checking whether the code written to run a piece of analysis is fit-for-purpose: does it conform to our coding standards, is it repeatable, is it secure?</p>
 <p>There are many guides to code review [INSERT EXAMPLE] of software peer review [INSERT EXAMPLE].</p>
 <p>Code review can take place at any stage of a project, but there are some important timepoints when code review is essential: before you publish a major version of code/analysis based on the code, when merging into the &lsquo;master&rsquo; and &lsquo;dev&rsquo; branches of a crucial git repository (e.g. R packages/Python libaries, scripts that are used by multiple projects). The following table lists the key things you should consider when asking for/conducting a code review.</p>
 <table>

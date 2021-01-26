@@ -16,14 +16,5 @@
       <description>Project containers summary goes here</description>
     </item>
     
-    <item>
-      <title>QA and code review</title>
-      <link>https://co-analysis.github.io/coding-guide/workflow/qa/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://co-analysis.github.io/coding-guide/workflow/qa/</guid>
-      <description>QA summary goes here</description>
-    </item>
-    
   </channel>
 </rss>

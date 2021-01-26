@@ -48,6 +48,11 @@
   </url>
   
   <url>
+    <loc>https://co-analysis.github.io/coding-guide/assurance/code_review/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://co-analysis.github.io/coding-guide/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
@@ -58,7 +63,7 @@
   </url>
   
   <url>
-    <loc>https://co-analysis.github.io/coding-guide/workflow/qa/</loc>
+    <loc>https://co-analysis.github.io/coding-guide/assurance/qa/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   

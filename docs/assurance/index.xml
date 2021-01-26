@@ -7,5 +7,23 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://co-analysis.github.io/coding-guide/assurance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code review</title>
+      <link>https://co-analysis.github.io/coding-guide/assurance/code_review/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/assurance/code_review/</guid>
+      <description>Summary goes here</description>
+    </item>
+    
+    <item>
+      <title>QA and code review</title>
+      <link>https://co-analysis.github.io/coding-guide/assurance/qa/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/assurance/qa/</guid>
+      <description>QA summary goes here</description>
+    </item>
+    
   </channel>
 </rss>
