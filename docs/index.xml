@@ -22,9 +22,7 @@
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://co-analysis.github.io/coding-guide/workflow/projects/</guid>
-      <description>Analytical projects generally, but especially those using code, should be managed as a project.
-A project is a discrete piece of work/analysis that is self-contained and can be run on its own. It may rely on other work, data or specific packages (see dependency management), but assuming you have access to the other work, data or packages you ought to be able to run this code.
-Projects should be contained in separate, distinct, and well named, folders.</description>
+      <description>Project containers summary goes here</description>
     </item>
     
     <item>
@@ -33,19 +31,7 @@ Projects should be contained in separate, distinct, and well named, folders.</de
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://co-analysis.github.io/coding-guide/workflow/qa/</guid>
-      <description>Quality assurance and code review are important parts of the project lifecycle. They ensure that your project does what it&amp;rsquo;s supposed to (QA), and can easily be followed by others (code review).
-Quality assurance Quality assurance (or &amp;lsquo;QA&amp;rsquo;) is about verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc.
-Quality assurance should take place for all pieces of analysis that go beyond the team - where they go to customers or stakeholders.</description>
-    </item>
-    
-    <item>
-      <title>Test R Page</title>
-      <link>https://co-analysis.github.io/coding-guide/workflow/testr/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://co-analysis.github.io/coding-guide/workflow/testr/</guid>
-      <description>This is a test of an RMarkdown document within a govuk-hugo theme.
-# Comment mtcars    mpg cyl disp hp drat wt qsec vs am gear carb    Mazda RX4 21.0 6 160.0 110 3.90 2.620 16.46 0 1 4 4  Mazda RX4 Wag 21.0 6 160.0 110 3.90 2.875 17.02 0 1 4 4  Datsun 710 22.8 4 108.0 93 3.85 2.320 18.</description>
+      <description>QA summary goes here</description>
     </item>
     
   </channel>
