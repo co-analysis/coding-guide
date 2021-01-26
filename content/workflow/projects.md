@@ -2,7 +2,7 @@
 title: "Project containers"
 date: 2021-01-22
 type: post
-listposts: true
+summary: "Project containers summary goes here"
 ---
 
 Analytical projects generally, but especially those using code, should be managed as a project.
