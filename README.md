@@ -8,19 +8,39 @@ This work is Crown Copyright (C) 2020, and published under the [Open Government 
 
 The guide is built using [Hugo](https://gohugo.io), a static site builder, with the [`govuk-hugo`](https://github.com/co-analysis/govuk-hugo) theme for applying the GOV.UK Design System to the site.
 
-## Use with R
+## Contributing
 
-Pages without R code should use simple markdown as per Hugo.
 
-`govuk-hugo` is not compatible with the `{blogdown}` rendering functions, instead a custom function is used to render Rmarkdown documents. To build `.Rmd` files execute the following code:
+### Pages
 
-```r
-source("R/render_functions.R")
-build_hugo()
+New pages should be created as markdown (.md) files in the relevant `content/` subfolder.
+
+Pages should have the following YAML front matter:
+
+```yaml
+---
+title: "Code review"
+date: 2021-01-22
+type: post
+summary: "Summary goes here"
+---
 ```
 
-`build_hugo()` assumes that Rmd files are stored in the folder `R/Rmd/`. `.Rmd` files should have `section` set in their YAML front-matter to set the sub-directory of the content folder that the Rmd file would ordinarily reside in (e.g. `section: workflow` would mean the Rmd would be in the `content/workflow/` file if it were an ordinary markdown file).
+Page summaries are recommended as they are used to provide a summary on the section index pages.
 
-For each `.Rmd` file `build_hugo()` calls `render_rmd()` which uses `rmarkdown::html_fragment()` to convert the Rmd to HTML. This HTML relating to the content within the Rmd without any of the header or footer information that is inserted by `rmarkdown::html_document()`. It then appends the YAML front matter to the top of the fragment and writes the fragment HTML into the appropriate content directory.
+### Sections
 
-After rendering the `.Rmd` files, `build_hugo()` runs Hugo's site builder which converts markdown and fragment HTML pages into a full site.
+New sections can be created as a sub-folder of the `content/` directory. It is recommended that each section has an `_index.md` file. This allows you to set the section title (which is used to sort items in the navigation side bar), you can also provide content for the index page itself. The `listpages` argument in the YAML front-matter determines whether the page list is shown.
+
+```yaml
+---
+title: "1. Workflow"
+date: 2021-01-22
+listpages: true
+---
+```
+
+
+### Use with R
+
+`govuk-hugo` is not compatible with the `{blogdown}` rendering functions, instead a custom function is used to render Rmarkdown documents. See the [`govuk-hugo-demo` repo](https://github.com/co-analysis/govuk-hugo-demo) for more details.
