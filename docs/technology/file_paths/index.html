@@ -24,9 +24,7 @@
   
 
   
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <link href="https://co-analysis.github.io/coding-guide/css/syntax.css" rel="stylesheet">
 
   <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
 
@@ -245,36 +243,115 @@
     <p>A key benefit of using <a href="https://co-analysis.github.io/coding-guide/workflow/projects/">project containers</a> in analysis is to enable cross-team collaboration. However, this can easily become troublesome if you have not thought carefully about file paths. Cabinet Office IT provides both Mac and Windows devices. Most data for analysis is stored on a network file store or in Google Drive. Not only do the way file systems mount vary between operating systems, different individuals may mount at different points in the folder structure or in the case of windows to different drive letters.</p>
 <h2 id="file-path-problems">File path problems</h2>
 <p>Consider the following theoretical folder path:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">FILESTORE/SHARE/ANALYSIS/FOLDER1/DATA
-</code></pre></div><p>Someone on a Mac might mount the <code>ANALYSIS</code> folder and their file path to the <code>DATA</code> folder:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">/Volumes/ANALYSIS/FOLDER1/DATA
-</code></pre></div><p>Sometimes Macs will re-mount the folder if the network connection is lost giving the following path:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">/Volumes/ANALYSIS-1/FOLDER1/DATA
-</code></pre></div><p>One Windows user might also mount at the <code>ANALYSIS</code> folder and allocate this to the <code>X:</code> drive, in which case their path to the <code>DATA</code> folder is:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">X:\FOLDER1\DATA
-</code></pre></div><p>Another Windows user has mounted <code>FOLDER1</code> as the <code>T:</code> drive, and so their path is:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">T:\DATA
-</code></pre></div><p>While another Windows user has mounted the <code>DATA</code> folder to the <code>T:</code> drive, and so their path to the folder is simply:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-txt" data-lang="txt">T:\
-</code></pre></div><h2 id="strategies-for-managing-file-paths">Strategies for managing file paths</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">FILESTORE/SHARE/ANALYSIS/FOLDER1/DATA
+</code></pre></td></tr></table>
+</div>
+</div><p>Someone on a Mac might mount the <code>ANALYSIS</code> folder and their file path to the <code>DATA</code> folder:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">/Volumes/ANALYSIS/FOLDER1/DATA
+</code></pre></td></tr></table>
+</div>
+</div><p>Sometimes Macs will re-mount the folder if the network connection is lost giving the following path:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">/Volumes/ANALYSIS-1/FOLDER1/DATA
+</code></pre></td></tr></table>
+</div>
+</div><p>One Windows user might also mount at the <code>ANALYSIS</code> folder and allocate this to the <code>X:</code> drive, in which case their path to the <code>DATA</code> folder is:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">X:\FOLDER1\DATA
+</code></pre></td></tr></table>
+</div>
+</div><p>Another Windows user has mounted <code>FOLDER1</code> as the <code>T:</code> drive, and so their path is:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">T:\DATA
+</code></pre></td></tr></table>
+</div>
+</div><p>While another Windows user has mounted the <code>DATA</code> folder to the <code>T:</code> drive, and so their path to the folder is simply:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">T:\
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="strategies-for-managing-file-paths">Strategies for managing file paths</h2>
 <p>You should not use explicit file paths to network drives in your code. These make it hard for others to easily execute your code.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;X:\PATH\TO\PROJECT\FILE.csv&#34;</span>)
-data2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#e6db74">&#34;X:\PATH\TO\PROJECT\FILE2.csv&#34;</span>)
-</code></pre></div><p>Instead you should use relative paths, by specifying a folder as a variable and referring to that in future lines calling files. This allows others to quickly and easily change the folder reference as needed. You should use the forward-slash, <code>/</code>, to denote folder structures since Windows can process both forward-slash and back-slash as the folder delimiter.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">folder_path <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;X:/PATH/TO/PROJECT&#34;</span>
-data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#a6e22e">paste0</span>(folder_path, <span style="color:#e6db74">&#34;/FILE.CSV&#34;</span>))
-data2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#a6e22e">paste0</span>(folder_path, <span style="color:#e6db74">&#34;/FILE2.CSV&#34;</span>))
-</code></pre></div><p>Within R you can also use the <code>file.path()</code> function to construct file paths:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">folder_path <span style="color:#f92672">&lt;-</span> <span style="color:#e6db74">&#34;X:/PATH/TO/PROJECT&#34;</span>
-data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#a6e22e">file.path</span>(folder_path, <span style="color:#e6db74">&#34;/FILE.CSV&#34;</span>))
-data2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#a6e22e">file.path</span>(folder_path, <span style="color:#e6db74">&#34;/FILE2.CSV&#34;</span>))
-</code></pre></div><p>If using RStudio you can also use interactive file and directory functions to set paths</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-r" data-lang="r">folder_path <span style="color:#f92672">&lt;-</span> rstudioapi<span style="color:#f92672">::</span><span style="color:#a6e22e">selectDirectory</span>()
-data <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(<span style="color:#a6e22e">file.path</span>(folder_path, <span style="color:#e6db74">&#34;/FILE.CSV&#34;</span>))
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&#34;X:\PATH\TO\PROJECT\FILE.csv&#34;</span><span class="p">)</span>
+<span class="n">data2</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="s">&#34;X:\PATH\TO\PROJECT\FILE2.csv&#34;</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Instead you should use relative paths, by specifying a folder as a variable and referring to that in future lines calling files. This allows others to quickly and easily change the folder reference as needed. You should use the forward-slash, <code>/</code>, to denote folder structures since Windows can process both forward-slash and back-slash as the folder delimiter.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="n">folder_path</span> <span class="o">&lt;-</span> <span class="s">&#34;X:/PATH/TO/PROJECT&#34;</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="s">&#34;/FILE.CSV&#34;</span><span class="p">))</span>
+<span class="n">data2</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="s">&#34;/FILE2.CSV&#34;</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>Within R you can also use the <code>file.path()</code> function to construct file paths:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="n">folder_path</span> <span class="o">&lt;-</span> <span class="s">&#34;X:/PATH/TO/PROJECT&#34;</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="nf">file.path</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="s">&#34;/FILE.CSV&#34;</span><span class="p">))</span>
+<span class="n">data2</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="nf">file.path</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="s">&#34;/FILE2.CSV&#34;</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>If using RStudio you can also use interactive file and directory functions to set paths</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="n">folder_path</span> <span class="o">&lt;-</span> <span class="n">rstudioapi</span><span class="o">::</span><span class="nf">selectDirectory</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="nf">file.path</span><span class="p">(</span><span class="n">folder_path</span><span class="p">,</span> <span class="s">&#34;/FILE.CSV&#34;</span><span class="p">))</span>
 
-file_path <span style="color:#f92672">&lt;-</span> rstudioapi<span style="color:#f92672">::</span><span style="color:#a6e22e">selectFile</span>()
-data2 <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">read_csv</span>(file_path)
-</code></pre></div><h2 id="google-drive-files">Google Drive files</h2>
+<span class="n">file_path</span> <span class="o">&lt;-</span> <span class="n">rstudioapi</span><span class="o">::</span><span class="nf">selectFile</span><span class="p">()</span>
+<span class="n">data2</span> <span class="o">&lt;-</span> <span class="nf">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="google-drive-files">Google Drive files</h2>
 <p>For security reasons you cannot programmatically access any Cabinet Office files stored in Google Drive via Google&rsquo;s APIs. You can use Google File Stream which maps Google Drive as network drive, however caution should be taken. Usually the best solution for working with files stored in Google Drive is to download them as CSV files and store them locally on your machine. Remember to follow the advice about using a <code>.gitignore</code> to ensure you do not accidentally commit data to a remote repository.</p>
 
 
