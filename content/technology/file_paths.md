@@ -12,7 +12,7 @@ A key benefit of using [project containers]({{< relref "workflow/projects.md">}}
 Consider the following theoretical folder path:
 
 ```txt
-FILESTORE/SHARE/ANALYSIS/FOLDER1/DATA
+//FILESTORE/SHARE/ANALYSIS/FOLDER1/DATA
 ```
 
 Someone on a Mac might mount the `ANALYSIS` folder and their file path to the `DATA` folder:
