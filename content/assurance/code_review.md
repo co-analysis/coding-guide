@@ -3,6 +3,7 @@ title: "Code review"
 date: 2021-01-22
 type: post
 summary: "Summary goes here"
+weight: 100
 ---
 
 Code review is about checking whether the code written to run a piece of analysis is fit-for-purpose: does it conform to our coding standards, is it repeatable, is it secure?

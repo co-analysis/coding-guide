@@ -3,6 +3,7 @@ title: "Installing software"
 date: 2021-01-22
 type: post
 summary: "How to install R, RStudio, Python and git on Cabinet Office IT"
+weight: 200
 ---
 
 For the latest official advice and information about installing software on Cabinet Office IT please consult the intranet. This information is for general guidance and for security reasons is limited in detail.

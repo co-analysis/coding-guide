@@ -3,6 +3,7 @@ title: "File paths"
 date: 2021-01-22
 type: post
 summary: "Best practice on managing file paths in a mixed Mac/Windows ecosystem"
+weight: 900
 ---
 
 A key benefit of using [project containers]({{< relref "workflow/projects.md">}}) in analysis is to enable cross-team collaboration. However, this can easily become troublesome if you have not thought carefully about file paths. Cabinet Office IT provides both Mac and Windows devices. Most data for analysis is stored on a network file store or in Google Drive. Not only do the way file systems mount vary between operating systems, different individuals may mount at different points in the folder structure or in the case of windows to different drive letters.

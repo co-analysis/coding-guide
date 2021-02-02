@@ -3,6 +3,7 @@ title: "Quality assurance"
 date: 2021-01-22
 type: post
 summary: "QA summary goes here"
+weight: 100
 ---
 
 Quality assurance (or 'QA') is about verifying that the analysis is correct - are we using the right methods, does it give the numbers we expect, etc.

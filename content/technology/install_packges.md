@@ -3,6 +3,7 @@ title: "Installing packages, libraries & extensions"
 date: 2021-01-22
 type: post
 summary: "Advice on how to install software extension such as R packages and Python libraries"
+weight: 210
 ---
 
 One of the main benefits of using open source software such as R or Python in analysis is the wide range of code that has been written to extend their functionality, these typically called packages in R and libraries in Python, we use 'package' as a generic term to refer to both. There are almost 17,000 packages hosted on CRAN, the central package manager for R, while Anaconda hosts over 7,500 Python libraries (a small data science specific subset of the 285,000-plus Python libraries).
