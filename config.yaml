@@ -30,3 +30,7 @@ params:
   product: Analytical Coding Guide
   phase: alpha
   feedbackurl: https://github.com/co-analysis/coding-guide/issues/
+  accessibility: accessibility.md
+  cookies: cookies.md
+  builtby: "Cabinet Office Analysis & Insight"
+  builtbyurl: https://www.github.com/co-analysis
