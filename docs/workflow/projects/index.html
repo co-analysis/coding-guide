@@ -26,6 +26,8 @@
   
   <link href="https://co-analysis.github.io/coding-guide/css/syntax.css" rel="stylesheet">
 
+  
+
   <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
 
 </head><body class="govuk-template__body js-enabled"><script>
@@ -101,6 +103,7 @@
                 
 
                 
+                
 
                 
                 <li class="nav-item nav-active-item"><a
@@ -108,6 +111,7 @@
                                 href="https://co-analysis.github.io/coding-guide/workflow/projects/">Project containers</a></li>
                 
 
+                
                 
 
                 
@@ -117,6 +121,16 @@
                 </li>
                 
 
+                
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/code_style/writing_code/">Writing code for analysis</a></li>
+                
+
+                
                 
 
                 
@@ -154,6 +168,7 @@
                 
 
                 
+                
 
                 
                 <li class="nav-item"><a
@@ -170,6 +185,7 @@
                 
 
                 
+                
 
                 
 
@@ -179,13 +195,16 @@
                 
 
                 
+                
 
                 
                 <li class="nav-item"><a
                                 class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
-                                href="https://co-analysis.github.io/coding-guide/technology/file_paths/">File paths</a></li>
+                                href="https://co-analysis.github.io/coding-guide/technology/install_software/">Installing software</a></li>
                 
 
+                
+                
                 
 
                 
@@ -195,13 +214,16 @@
                 
 
                 
+                
+                
 
                 
                 <li class="nav-item"><a
                                 class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
-                                href="https://co-analysis.github.io/coding-guide/technology/install_software/">Installing software</a></li>
+                                href="https://co-analysis.github.io/coding-guide/technology/file_paths/">File paths</a></li>
                 
 
+                
                 
 
                 
@@ -224,8 +246,8 @@
         <ul class="govuk-list nav-extra">
 
                 
-                <li class="nav-item"><a
-                                class="govuk-body-s govuk-!-font-size-14 govuk-link govuk-link--no-visited-state nav-link"
+                <li class="nav-item nav-about"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
                                 href="https://co-analysis.github.io/coding-guide/about/">About this guide</a></li>
                 
 
@@ -258,6 +280,39 @@
         <div class="govuk-footer__meta">
             <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
 
+                <h2 class="govuk-visually-hidden">Support links</h2>
+                <ul class="govuk-footer__inline-list">
+                
+                    
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/accessibility/">
+                            Accessibility
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/cookies/">
+                            Cookies
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        Built by <a class="govuk-footer__link" href="https://www.github.com/co-analysis">
+                            Cabinet Office Analysis &amp; Insight
+                        </a>
+                    </li>
+                    
+                
+                </ul>
+
                 <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo"
                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
                     <path fill="currentColor"
@@ -283,7 +338,7 @@
 <script type="text/javascript">
 
     function applyGOVUK(tag, govuk_class) {
-        var elements = document.getElementsByTagName(tag)
+        var elements = document.querySelector("div.dashboard-content").getElementsByTagName(tag)
 
         var i;
         for (i = 0; i < elements.length; i++) {
@@ -292,12 +347,43 @@
 
     };
 
+     
+    applyGOVUK("P", "govuk-body");
+
+     
+    applyGOVUK("H1", "govuk-heading-xl");
+    applyGOVUK("H2", "govuk-heading-l");
+    applyGOVUK("H3", "govuk-heading-m");
+    applyGOVUK("H4", "govuk-heading-s");
+
+     
     applyGOVUK("TABLE", "govuk-table");
     applyGOVUK("TR", "govuk-table__row");
     applyGOVUK("TD", "govuk-table__cell");
     applyGOVUK("THEAD", "govuk-table__head");
     applyGOVUK("TH", "govuk-table__header");
+
+     
     applyGOVUK("BLOCKQUOTE", "govuk-inset-text");
+    applyGOVUK("STRONG", "govuk-!-font-weight-bold");
+    applyGOVUK("B", "govuk-!-font-weight-bold");
+
+     
+    applyGOVUK("UL", "govuk-list");
+    applyGOVUK("UL", "govuk-list--bullet");
+    applyGOVUK("OL", "govuk-list");
+    applyGOVUK("OL", "govuk-list--number");
+
+     
+    function styleCodeBlocks() {
+        var code_elements = document.querySelectorAll("div.highlight")
+        var i;
+        
+        for (i = 0; i < code_elements.length; i++) {
+            code_elements[i].classList.add("govuk-body");
+        };
+    };
+    styleCodeBlocks();
 
 </script></body>
 

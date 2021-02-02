@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://co-analysis.github.io/coding-guide/assurance/code_review/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co-analysis.github.io/coding-guide/assurance/qa/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co-analysis.github.io/coding-guide/code_style/writing_code/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co-analysis.github.io/coding-guide/technology/install_software/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co-analysis.github.io/coding-guide/technology/install_packges/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co-analysis.github.io/coding-guide/technology/file_paths/</loc>
+    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co-analysis.github.io/coding-guide/accessibility/</loc>
+    <lastmod>2021-02-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://co-analysis.github.io/coding-guide/cookies/</loc>
+    <lastmod>2021-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://co-analysis.github.io/coding-guide/workflow/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
@@ -48,37 +88,12 @@
   </url>
   
   <url>
-    <loc>https://co-analysis.github.io/coding-guide/assurance/code_review/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://co-analysis.github.io/coding-guide/technology/file_paths/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://co-analysis.github.io/coding-guide/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://co-analysis.github.io/coding-guide/technology/install_packges/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://co-analysis.github.io/coding-guide/technology/install_software/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://co-analysis.github.io/coding-guide/workflow/projects/</loc>
-    <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://co-analysis.github.io/coding-guide/assurance/qa/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
   </url>
   

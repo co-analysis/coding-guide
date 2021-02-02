@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template "><head>
+  <meta charset="utf-8">
+  
+  
+  <title>Analytical Coding Guide | Writing code for analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/govuk-frontend-3.10.2.min.css" rel="stylesheet">
+  
+
+  
+
+  <link href="https://co-analysis.github.io/coding-guide/css/dashboard-layout.css" rel="stylesheet">
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/font-override.css" rel="stylesheet">
+  
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/syntax.css" rel="stylesheet">
+
+  
+
+  <meta property="og:image" content="/assets/images/govuk-opengraph-image.png">
+
+</head><body class="govuk-template__body js-enabled"><script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<header class="govuk-header " role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+
+        <div class="govuk-header__logo">
+            <a href="https://co-analysis.github.io/coding-guide/" class="govuk-header__link govuk-header__link--homepage">
+
+                <span class="govuk-header__logotype">
+                    
+
+                    <span class="govuk-header__logotype-text">
+                        ACG
+                    </span>
+
+
+                </span>
+
+                <span class="govuk-header__product-name">
+                    
+                    Analytical Coding Guide
+                    
+            </a>
+            </span>
+        </div>
+
+        <div class="govuk-header__product-name">
+
+        </div>
+
+    </div>
+</header>
+
+
+<div class="govuk-width-container">
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                alpha
+            </strong>
+            <span class="govuk-phase-banner__text">
+                This is a new service – your <a class="govuk-link" href="https://github.com/co-analysis/coding-guide/issues/">feedback</a>
+                will
+                help us to improve it.
+            </span>
+        </p>
+    </div>
+</div>
+<div class="govuk-width-container ">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="dashboard-container">
+
+                <div class="dashboard-nav">
+<nav class="sidebar-nav">
+
+        
+        
+
+        <ul class="govuk-list">
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/workflow/">1. Workflow</a>
+                </li>
+                
+
+                
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/workflow/projects/">Project containers</a></li>
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/code_style/">2. Code style</a>
+                </li>
+                
+
+                
+                
+
+                
+                <li class="nav-item nav-active-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state "
+                                href="https://co-analysis.github.io/coding-guide/code_style/writing_code/">Writing code for analysis</a></li>
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/output/">3. Output style</a>
+                </li>
+                
+
+                
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/functions/">3. Writing functions &amp; packages</a>
+                </li>
+                
+
+                
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/version_control/">4. Version control</a>
+                </li>
+                
+
+                
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/assurance/">5. Assurance</a>
+                </li>
+                
+
+                
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/assurance/code_review/">Code review</a></li>
+                
+
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/assurance/qa/">Quality assurance</a></li>
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/technology/">6. Technology</a>
+                </li>
+                
+
+                
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/technology/install_software/">Installing software</a></li>
+                
+
+                
+                
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/technology/install_packges/">Installing packages, libraries &amp; extensions</a></li>
+                
+
+                
+                
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/technology/file_paths/">File paths</a></li>
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-section "><a class="govuk-!-font-size-14" href="https://co-analysis.github.io/coding-guide/reference/">7. Learning and reference materials</a>
+                </li>
+                
+
+                
+
+                
+
+        </ul>
+
+        
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" />
+        
+
+        <ul class="govuk-list nav-extra">
+
+                
+                <li class="nav-item nav-about"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/about/">About this guide</a></li>
+                
+
+                </a>
+
+        </ul>
+        
+
+</nav></div>
+                <div class="dashboard-content">
+<h1 class="govuk-heading-xl">Writing code for analysis</h1>
+
+<div class="govuk-body">
+
+    <p>Everyone will write code their own way, and some languages are more prescriptive than others about their approach and conventions. This page sets out some common conventions that are our recommended approach to writing code for analysis. This page is not a complete style guide, instead we recommend the <a href="https://style.tidyverse.org/files.html">Tidyverse style guide</a> for R and the appropriate <a href="https://google.github.io/styleguide/">Google style guide</a> for all other languages.</p>
+<h2 id="readability-and-white-space">Readability and white space</h2>
+<p>The most important thing about writing good code is ensuring that your code can be easily read by others (including your future self). Others should be able to read your scripts without too much effort and to be able to follow the flow of the code. Remember that &ldquo;white space is free&rdquo;, just because you can nest or chain functions and write a complex piece of analysis in a few short, dense lines of code does not mean that you should. Most languages allow you to split code over multiple lines, take advantage of this.</p>
+<p>Two good rules of thumb are, if you&rsquo;re doing something &lsquo;new&rsquo; then use a new line, and you should avoid any single line of code being longer than 80 characters long. In R, if you use a pipe operator (<code>%&gt;%</code> or <code>|&gt;</code>) then this is a good indicator that you should use a new line.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Bad</span>
+<span class="n">new_df</span> <span class="o">&lt;-</span> <span class="n">df</span> <span class="o">%&gt;%</span> <span class="nf">filter</span><span class="p">(</span><span class="n">location</span><span class="o">==</span><span class="s">&#34;Manchester&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">mutate</span><span class="p">(</span><span class="n">over_50</span><span class="o">=</span><span class="nf">if_else</span><span class="p">(</span><span class="n">age</span><span class="o">&gt;</span><span class="m">50</span><span class="p">,</span><span class="s">&#34;50+&#34;</span><span class="p">,</span><span class="s">&#34;0-50&#34;</span><span class="p">),</span><span class="n">under_30</span><span class="o">=</span><span class="nf">if_else</span><span class="p">(</span><span class="n">age</span><span class="o">&lt;</span><span class="m">30</span><span class="p">,</span><span class="s">&#34;0-30&#34;</span><span class="p">,</span><span class="s">&#34;30+&#34;</span><span class="p">))</span>
+
+<span class="c1"># Good</span>
+<span class="n">new_df</span> <span class="o">&lt;-</span> <span class="n">df</span> <span class="o">%&gt;%</span>
+  <span class="nf">filter</span><span class="p">(</span><span class="n">location</span> <span class="o">==</span> <span class="s">&#34;Manchester&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">mutate</span><span class="p">(</span>
+      <span class="n">over_50</span> <span class="o">=</span> <span class="nf">if_else</span><span class="p">(</span><span class="n">age</span> <span class="o">&gt;</span> <span class="m">50</span><span class="p">,</span> <span class="s">&#34;50+&#34;</span><span class="p">,</span> <span class="s">&#34;0-50&#34;</span><span class="p">),</span>
+      <span class="n">under_30</span> <span class="o">=</span> <span class="nf">if_else</span><span class="p">(</span><span class="n">age</span> <span class="o">&lt;</span> <span class="m">30</span><span class="p">,</span> <span class="s">&#34;0-30&#34;</span><span class="p">,</span> <span class="s">&#34;30+&#34;</span><span class="p">)</span>
+  <span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="naming-variables-and-functions">Naming variables and functions</h2>
+<p>Any objects (variables or functions) that you create should use <code>snake_case</code>, i.e. use an underscore (<code>_</code>) to separate words within a name. Conventions in some languages, and/or pre-existing code, might use <code>camelCase</code> or <code>BigCamelCase</code>, these can be used to preserve consistency. Dot separation (<code>dot.separation</code>) is not recommended and should be avoided, even with working with legacy code.</p>
+<p>Names should be short and meaningful, variables/data object names should be nouns while function names should be verbs. Avoid numbers unless they have a specific contextual meaning (e.g. a year), you should also be careful about using single letters.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Bad</span>
+<span class="n">departments_agencies_and_organisations</span>
+<span class="nf">my_age_selection</span><span class="p">()</span>
+
+<span class="c1"># Good</span>
+<span class="n">orgs</span>
+<span class="nf">select_age</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="piping-and-chaining">Piping and chaining</h2>
+<p>Some languages have built-in support for, or have been extended to support, <a href="https://en.wikipedia.org/wiki/Pipeline_(Unix)">&ldquo;piping&rdquo;</a> while other languages (particularly object-orientated) support <a href="https://en.wikipedia.org/wiki/Method_chaining">&ldquo;chaining&rdquo;</a>. Both of these are ways to pass the output of one function/method to another.</p>
+<p>In general, we recommend piping/chaining over repeatedly modifying a variable/object or creating separate intermediate variables/objects for each functions. However, you should ensure that any pipeline or chain is understandable to an external reader of your code. It can be useful both to break your pipeline/chain and output an intermediate variable/object at an appropriate point to enable error checking and to assist external readers/reviewers of your code.</p>
+<p>Piping/chaining is preferred over <a href="https://en.wikipedia.org/wiki/Nesting_(computing)">nesting</a> as it enhances legibility.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Bad</span>
+<span class="nf">summarise</span><span class="p">(</span><span class="nf">mutate</span><span class="p">(</span><span class="nf">select</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">),</span> <span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">),</span> <span class="n">mean_z</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+
+<span class="c1"># Good</span>
+<span class="n">df</span> <span class="o">%&gt;%</span>
+  <span class="nf">select</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">mutate</span><span class="p">(</span><span class="n">z</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">summarise</span><span class="p">(</span><span class="n">mean_z</span> <span class="o">=</span> <span class="nf">mean</span><span class="p">(</span><span class="n">z</span><span class="p">))</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="writing-code-comments">Writing code comments</h2>
+<p>Our guidance on documentation(LINK NEEDED) details how to formally document your coding projects, for example header metadata in scripts and documenting functions. Informal documentation within scripts is also important, others (including your future self) benefit from you decorating your scripts with short, simple, regular comments that help explain what each block code is trying to achieve. This makes it easy for others to either (a) pick up/re-use your work at a future point, and (b) check and review your code.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Select Manchester staff and add age flags</span>
+<span class="n">new_df</span> <span class="o">&lt;-</span> <span class="n">df</span> <span class="o">%&gt;%</span>
+  <span class="nf">filter</span><span class="p">(</span><span class="n">location</span> <span class="o">==</span> <span class="s">&#34;Manchester&#34;</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">mutate</span><span class="p">(</span>
+      <span class="n">over_50</span> <span class="o">=</span> <span class="nf">if_else</span><span class="p">(</span><span class="n">age</span> <span class="o">&gt;</span> <span class="m">50</span><span class="p">,</span> <span class="s">&#34;50+&#34;</span><span class="p">,</span> <span class="s">&#34;0-50&#34;</span><span class="p">),</span>
+      <span class="n">under_30</span> <span class="o">=</span> <span class="nf">if_else</span><span class="p">(</span><span class="n">age</span> <span class="o">&lt;</span> <span class="m">30</span><span class="p">,</span> <span class="s">&#34;0-30&#34;</span><span class="p">,</span> <span class="s">&#34;30+&#34;</span><span class="p">)</span>
+  <span class="p">)</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="separate-your-output-code">Separate your output code</h2>
+<p>It is recommended that you separate data wrangling (selecting, filtering, transforming data) from any function calls that output the results of the data (e.g. plotting or formatting a table). This ensures that the two processes (wrangling and output) are distinct and separate. This ensures it is clear what aspects of your code are about manipulating the data and which are for outputting your analysis. In R, this also helps avoid common mistakes arising from the <code>{ggplot2}</code> package using a plus (<code>+</code>) as it&rsquo;s mechanism for piping/chaining functions rather than the pipe operator (<code>%&gt;%</code>).</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-r" data-lang="r"><span class="c1"># Bad</span>
+<span class="n">df</span> <span class="o">%&gt;%</span>
+  <span class="nf">select</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">weight</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">mutate</span><span class="p">(</span><span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="n">height^2</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">ggplot</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">year</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">bmi</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_point</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">geom_smooth</span><span class="p">()</span>
+
+<span class="c1"># Good</span>
+<span class="n">plot_df</span> <span class="o">&lt;-</span> <span class="n">df</span> <span class="o">%&gt;%</span>
+  <span class="nf">select</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">weight</span><span class="p">)</span> <span class="o">%&gt;%</span>
+  <span class="nf">mutate</span><span class="p">(</span><span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="n">height^2</span><span class="p">)</span>
+
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">plot_df</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">year</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">bmi</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">geom_point</span><span class="p">()</span> <span class="o">+</span>
+  <span class="nf">geom_smooth</span><span class="p">()</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>More detailed guidance about code for output is provided in the <a href="https://co-analysis.github.io/coding-guide/output/">output style</a> section.</p>
+
+
+</div>
+
+
+
+                </div>
+
+            </div>
+        </main>
+    </div><footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+        <div class="govuk-footer__meta">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+                <h2 class="govuk-visually-hidden">Support links</h2>
+                <ul class="govuk-footer__inline-list">
+                
+                    
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/accessibility/">
+                            Accessibility
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/cookies/">
+                            Cookies
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        Built by <a class="govuk-footer__link" href="https://www.github.com/co-analysis">
+                            Cabinet Office Analysis &amp; Insight
+                        </a>
+                    </li>
+                    
+                
+                </ul>
+
+                <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                    <path fill="currentColor"
+                        d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+                </svg>
+                <span class="govuk-footer__licence-description">
+                    All content is available under the
+                    <a class="govuk-footer__link"
+                        href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                        rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                </span>
+            </div>
+            <div class="govuk-footer__meta-item">
+                <a style="background-image:url(https://co-analysis.github.io/coding-guide/assets/images/govuk-crest.png);"
+                    class="govuk-footer__link govuk-footer__copyright-logo"
+                    href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">©
+                    Crown copyright </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+
+    function applyGOVUK(tag, govuk_class) {
+        var elements = document.querySelector("div.dashboard-content").getElementsByTagName(tag)
+
+        var i;
+        for (i = 0; i < elements.length; i++) {
+            elements[i].classList.add(govuk_class);
+        };
+
+    };
+
+     
+    applyGOVUK("P", "govuk-body");
+
+     
+    applyGOVUK("H1", "govuk-heading-xl");
+    applyGOVUK("H2", "govuk-heading-l");
+    applyGOVUK("H3", "govuk-heading-m");
+    applyGOVUK("H4", "govuk-heading-s");
+
+     
+    applyGOVUK("TABLE", "govuk-table");
+    applyGOVUK("TR", "govuk-table__row");
+    applyGOVUK("TD", "govuk-table__cell");
+    applyGOVUK("THEAD", "govuk-table__head");
+    applyGOVUK("TH", "govuk-table__header");
+
+     
+    applyGOVUK("BLOCKQUOTE", "govuk-inset-text");
+    applyGOVUK("STRONG", "govuk-!-font-weight-bold");
+    applyGOVUK("B", "govuk-!-font-weight-bold");
+
+     
+    applyGOVUK("UL", "govuk-list");
+    applyGOVUK("UL", "govuk-list--bullet");
+    applyGOVUK("OL", "govuk-list");
+    applyGOVUK("OL", "govuk-list--number");
+
+     
+    function styleCodeBlocks() {
+        var code_elements = document.querySelectorAll("div.highlight")
+        var i;
+        
+        for (i = 0; i < code_elements.length; i++) {
+            code_elements[i].classList.add("govuk-body");
+        };
+    };
+    styleCodeBlocks();
+
+</script></body>
+
+</html>

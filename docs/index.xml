@@ -8,15 +8,6 @@
     <language>en-gb</language>
     <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://co-analysis.github.io/coding-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About this guide</title>
-      <link>https://co-analysis.github.io/coding-guide/about/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://co-analysis.github.io/coding-guide/about/</guid>
-      <description>About page</description>
-    </item>
-    
-    <item>
       <title>Code review</title>
       <link>https://co-analysis.github.io/coding-guide/assurance/code_review/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
@@ -26,21 +17,21 @@
     </item>
     
     <item>
-      <title>File paths</title>
-      <link>https://co-analysis.github.io/coding-guide/technology/file_paths/</link>
+      <title>Quality assurance</title>
+      <link>https://co-analysis.github.io/coding-guide/assurance/qa/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://co-analysis.github.io/coding-guide/technology/file_paths/</guid>
-      <description>Best practice on managing file paths in a mixed Mac/Windows ecosystem</description>
+      <guid>https://co-analysis.github.io/coding-guide/assurance/qa/</guid>
+      <description>QA summary goes here</description>
     </item>
     
     <item>
-      <title>Installing packages, libraries &amp; extensions</title>
-      <link>https://co-analysis.github.io/coding-guide/technology/install_packges/</link>
+      <title>Writing code for analysis</title>
+      <link>https://co-analysis.github.io/coding-guide/code_style/writing_code/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://co-analysis.github.io/coding-guide/technology/install_packges/</guid>
-      <description>Advice on how to install software extension such as R packages and Python libraries</description>
+      <guid>https://co-analysis.github.io/coding-guide/code_style/writing_code/</guid>
+      <description>Our approach to writing good code</description>
     </item>
     
     <item>
@@ -53,21 +44,58 @@
     </item>
     
     <item>
+      <title>Installing packages, libraries &amp; extensions</title>
+      <link>https://co-analysis.github.io/coding-guide/technology/install_packges/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/technology/install_packges/</guid>
+      <description>Advice on how to install software extension such as R packages and Python libraries</description>
+    </item>
+    
+    <item>
+      <title>File paths</title>
+      <link>https://co-analysis.github.io/coding-guide/technology/file_paths/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/technology/file_paths/</guid>
+      <description>Best practice on managing file paths in a mixed Mac/Windows ecosystem</description>
+    </item>
+    
+    <item>
+      <title>Accessibility statement</title>
+      <link>https://co-analysis.github.io/coding-guide/accessibility/</link>
+      <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/accessibility/</guid>
+      <description>This website is run by the Cabinet Office&amp;rsquo;s Analysis &amp;amp; Insight Directorate. We want as many people as possible to be able to use this website. For example, that means you should be able to:
+ change colours, contrast levels and fonts zoom in up to 300% without the text spilling off the screen navigate most of the website using just a keyboard navigate most of the website using speech recognition software listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver) We’ve also made the website text as simple as possible to understand.</description>
+    </item>
+    
+    <item>
+      <title>Cookies</title>
+      <link>https://co-analysis.github.io/coding-guide/cookies/</link>
+      <pubDate>Mon, 01 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/cookies/</guid>
+      <description>This website does not use cookies at all.</description>
+    </item>
+    
+    <item>
+      <title>About this guide</title>
+      <link>https://co-analysis.github.io/coding-guide/about/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/about/</guid>
+      <description>About page</description>
+    </item>
+    
+    <item>
       <title>Project containers</title>
       <link>https://co-analysis.github.io/coding-guide/workflow/projects/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://co-analysis.github.io/coding-guide/workflow/projects/</guid>
       <description>Project containers summary goes here</description>
-    </item>
-    
-    <item>
-      <title>Quality assurance</title>
-      <link>https://co-analysis.github.io/coding-guide/assurance/qa/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://co-analysis.github.io/coding-guide/assurance/qa/</guid>
-      <description>QA summary goes here</description>
     </item>
     
   </channel>

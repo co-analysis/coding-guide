@@ -7,5 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://co-analysis.github.io/coding-guide/code_style/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Writing code for analysis</title>
+      <link>https://co-analysis.github.io/coding-guide/code_style/writing_code/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/code_style/writing_code/</guid>
+      <description>Our approach to writing good code</description>
+    </item>
+    
   </channel>
 </rss>

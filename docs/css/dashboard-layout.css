@@ -36,7 +36,7 @@
     --govuk-colour-turquoise: #28a197;
     /* Text variables */
     --govuk-max-width-text: 810px;
-    --govuk-max-width-list: 700px;
+    --govuk-max-width-inset: 700px;
 }
 
 .govuk-width-container {
@@ -54,7 +54,11 @@ td, th {
 }
 
 .govuk-body li {
-    max-width: min(100%, var(--govuk-max-width-list));
+    max-width: min(100%, var(--govuk-max-width-inset));
+}
+
+.govuk-inset-text {
+    max-width: min(100%, var(--govuk-max-width-inset));
 }
 
 .govuk-header__product-name {
@@ -82,6 +86,8 @@ td, th {
 .sidebar-nav {
     overflow-y: scroll;
     height: calc(100vh - 200px);
+    position: sticky;
+    top: 20px;
 }
 
 .nav-section,
@@ -99,6 +105,16 @@ td, th {
 
 .nav-active-section {
     background-color: var(--govuk-colour-light-grey);
+    border-left: 5px solid var(--govuk-colour-dark-grey);
+    padding-left: 10px;
+}
+
+.nav-section:hover {
+    border-left: 5px solid var(--govuk-colour-mid-grey);
+    padding-left: 10px;
+}
+
+.nav-active-section:hover {
     border-left: 5px solid var(--govuk-colour-dark-grey);
     padding-left: 10px;
 }
@@ -136,6 +152,10 @@ td, th {
 .nav-item a:hover {
     text-decoration: none;
     color: var(--govuk-link-colour);
+}
+
+.nav-active-item a {
+    font-weight: 700;
 }
 
 .govuk-header__logo {
