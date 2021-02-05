@@ -90,12 +90,21 @@
     </item>
     
     <item>
-      <title>Project containers</title>
+      <title>Project set-up</title>
       <link>https://co-analysis.github.io/coding-guide/workflow/projects/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://co-analysis.github.io/coding-guide/workflow/projects/</guid>
-      <description>Project containers summary goes here</description>
+      <description>Code-based analysis should be managed as using a standard project set-up</description>
+    </item>
+    
+    <item>
+      <title>Reproducible Analytical Pipelines</title>
+      <link>https://co-analysis.github.io/coding-guide/workflow/rap/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/workflow/rap/</guid>
+      <description>Our advice on implementing Reproducible Analytical Pipelines in the Cabinet Office</description>
     </item>
     
   </channel>

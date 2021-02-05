@@ -3,7 +3,7 @@
   <meta charset="utf-8">
   
   
-  <title>Analytical Coding Guide | Project containers</title>
+  <title>Analytical Coding Guide | Project set-up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b0c0c">
 
@@ -108,7 +108,15 @@
                 
                 <li class="nav-item nav-active-item"><a
                                 class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state "
-                                href="https://co-analysis.github.io/coding-guide/workflow/projects/">Project containers</a></li>
+                                href="https://co-analysis.github.io/coding-guide/workflow/projects/">Project set-up</a></li>
+                
+
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/workflow/rap/">Reproducible Analytical Pipelines</a></li>
                 
 
                 
@@ -258,13 +266,61 @@
 
 </nav></div>
                 <div class="dashboard-content">
-<h1 class="govuk-heading-xl">Project containers</h1>
+<h1 class="govuk-heading-xl">Project set-up</h1>
 
 <div class="govuk-body">
 
-    <p>Analytical projects generally, but especially those using code, should be managed as a project.</p>
-<p>A project is a discrete piece of work/analysis that is self-contained and can be run on its own. It may rely on other work, data or specific packages (see dependency management), but assuming you have access to the other work, data or packages you ought to be able to run this code.</p>
-<p>Projects should be contained in separate, distinct, and well named, folders. Unless using version control, these project folders should be stored on the network file share. The shared drive or GitHub repository should be the cannonical version of the code.</p>
+    <p>Analytical work in general, but especially those using code, should be managed as a project - a distinct piece of work/analysis that is self-contained.</p>
+<p>Projects should be contained in separate, distinct, and well-named folders. They should also follow a standard structure to make it easier for others to navigate, at a minimum your project folder should include:</p>
+<ul>
+<li>If using version control a <code>.gitignore</code> file that lists the files/folders that should be excluded, by default the <code>data/</code> folder must be excluded as should common data extensions (e.g. <code>.csv</code>, <code>.dta</code>, <code>.xls*</code>, <code>.sav</code>, <code>.rds</code>).</li>
+<li>A <code>data/</code> folder to store any project specific datasets.</li>
+<li>An <code>output/</code> folder to store outputs from the analysis.</li>
+<li>A <code>functions/</code> folder to store code for bespoke functions you have written, it is customary with R-based coding for this folder to be named <code>R/</code> rather than <code>functions</code>.</li>
+<li>A <code>README.md</code> file that provides an introduction to the project and provides high-level documentation, if there is detailed documentation that needs to be spread over multiple files then you may want to include a <code>docs/</code> folder.</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-txt" data-lang="txt">project/
+  ├── .gitignore
+  ├── data/
+  │   ├── YYYY-MM-DD_raw-data1.csv
+  │   └── YYYY-MM-DD_raw-data2.csv
+  ├── output/
+  │   ├── YYYY-MM-DD_output.Rmd
+  │   └── YYYY-MM-DD_cleaned-data.csv
+  ├── functions/
+  │   └── functions.R
+  ├── script.R
+  └── README.md
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="naming-files">Naming files</h2>
+<p>File names should be short, distinct and easy to understand. Files relating to data or output should start with the date followed by their &ldquo;name&rdquo;. Spaces should not be used in file names, dates should be separates from the name using an underscore, while spaces in the name should be replaced with dashes.</p>
+<h3 id="dates">Dates</h3>
+<p>Dates should be in ISO format, as per Cabinet Office guidance on file names, that is the four digit year, two digit month and two digit day, with dashes separating each date component and leading zeros, so the 1st January 2021 becomes <code>2021-01-01</code>.</p>
+<h3 id="functions">Functions</h3>
+<p>Scripts containing functions should not be dated but have sensible names. If you only have a small number of bespoke functions you should create a single <code>functions.R</code> file to contain them in your <code>functions</code>/<code>R</code> directory. However when developing a large project, and/or package, it may make sense to split your functions into multiple scripts, in this case separate them into logical blocks and give them appropriate names (e.g. <code>import.R</code> for importing functions, or <code>output.R</code> for functions handling output).</p>
+<h3 id="workflow-scripts">Workflow scripts</h3>
+<p>For small projects you may have only one script, in this case you should call it <code>main.R</code> or <code>project.R</code> (where project is the name of your project), as with function scripts they should not be dated. As your project increases in complexity you should consider having separate scripts. If there is a natural flow where you must run one script before another, then number your scripts (e.g. <code>01_import_and_clean.R</code>, <code>02_model.R</code>, <code>03_export_files.R</code>) and write a &ldquo;runner&rdquo;/&ldquo;main&rdquo; script that calls each of these in turn (e.g. <code>00_main.R</code>).</p>
+<p>For advice on naming objects in your code, read our guidlines about [writing code]/code_style/writing_code/</p>
+<h2 id="rstudio-projects">RStudio projects</h2>
+<p>R-based code should be stored and managed inside an <a href="https://r4ds.had.co.nz/workflow-projects.html#rstudio-projects">RStudio project</a>.</p>
+<p>RStudio projects are particularly useful because when you launch/switch to an RStudio project the R console&rsquo;s working directory is set to the project folder. This means that when working with multiple scripts you only need to write folder paths that are relative to the project directory, this is particularly helpful when collaborating with others given the potential for <a href="https://co-analysis.github.io/coding-guide/technology/file_paths/">file path issues</a>.</p>
 
 
 </div>
@@ -384,6 +440,29 @@
         };
     };
     styleCodeBlocks();
+
+     
+    function restyleTOC() {
+
+        var toc_elements = document.querySelectorAll("#page_toc #TableOfContents ul")
+
+        var i;
+
+        for (i = 0; i < toc_elements.length; i++) {
+            toc_elements[i].classList.remove("govuk-list");
+            toc_elements[i].classList.remove("govuk-list--bullet");
+            toc_elements[i].classList.add("toc-list");
+
+        };
+
+        var toc_links = document.querySelectorAll("#page_toc #TableOfContents a")
+
+        for (i = 0; i < toc_links.length; i++) {
+            toc_links[i].classList.add("toc-link");
+        };
+
+    };
+    restyleTOC();
 
 </script></body>
 

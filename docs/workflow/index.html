@@ -109,7 +109,15 @@
                 
                 <li class="nav-item"><a
                                 class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
-                                href="https://co-analysis.github.io/coding-guide/workflow/projects/">Project containers</a></li>
+                                href="https://co-analysis.github.io/coding-guide/workflow/projects/">Project set-up</a></li>
+                
+
+                
+
+                
+                <li class="nav-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/workflow/rap/">Reproducible Analytical Pipelines</a></li>
                 
 
                 
@@ -280,13 +288,28 @@
         
         <div class="govuk-summary-list__row">
             <dt class="govuk-summary-list__key">
-                Project containers
+                Project set-up
             </dt>
             <dd class="govuk-summary-list__value">
-                Project containers summary goes here
+                Code-based analysis should be managed as using a standard project set-up
             </dd>
             <dd class="govuk-summary-list__actions">
                 <a class="govuk-link" href="https://co-analysis.github.io/coding-guide/workflow/projects/">
+                    Read/View</span>
+                </a>
+            </dd>
+
+        </div>
+        
+        <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+                Reproducible Analytical Pipelines
+            </dt>
+            <dd class="govuk-summary-list__value">
+                Our advice on implementing Reproducible Analytical Pipelines in the Cabinet Office
+            </dd>
+            <dd class="govuk-summary-list__actions">
+                <a class="govuk-link" href="https://co-analysis.github.io/coding-guide/workflow/rap/">
                     Read/View</span>
                 </a>
             </dd>
@@ -417,6 +440,29 @@
         };
     };
     styleCodeBlocks();
+
+     
+    function restyleTOC() {
+
+        var toc_elements = document.querySelectorAll("#page_toc #TableOfContents ul")
+
+        var i;
+
+        for (i = 0; i < toc_elements.length; i++) {
+            toc_elements[i].classList.remove("govuk-list");
+            toc_elements[i].classList.remove("govuk-list--bullet");
+            toc_elements[i].classList.add("toc-list");
+
+        };
+
+        var toc_links = document.querySelectorAll("#page_toc #TableOfContents a")
+
+        for (i = 0; i < toc_links.length; i++) {
+            toc_links[i].classList.add("toc-link");
+        };
+
+    };
+    restyleTOC();
 
 </script></body>
 
