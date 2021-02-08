@@ -83,4 +83,4 @@ data2 <- read_csv(file_path)
 
 ## Google Drive files
 
-For security reasons you cannot programmatically access any Cabinet Office files stored in Google Drive via Google's APIs. You can use Google File Stream which maps Google Drive as network drive, however caution should be taken. Usually the best solution for working with files stored in Google Drive is to download them as CSV files and store them locally on your machine. Remember to follow the advice about using a `.gitignore` to ensure you do not accidentally commit data to a remote repository.
+For security reasons you cannot programmatically access any Cabinet Office files stored in Google Drive via Google's APIs. You can use Google File Stream which maps Google Drive as network drive, however this has the same issues and limitations as working with other network file shares. Usually the best solution for working with files stored in Google Sheets is to download them as CSV files and store them locally on your machine. Remember to follow the advice about using a `.gitignore` to ensure you do not accidentally commit data to a remote repository.
