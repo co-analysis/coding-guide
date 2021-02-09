@@ -2,6 +2,7 @@
 title: "Reproducible Analytical Pipelines"
 date: 2021-01-22
 type: post
+weight: 900
 summary: "Our advice on implementing Reproducible Analytical Pipelines in the Cabinet Office"
 ---
 

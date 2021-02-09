@@ -2,6 +2,7 @@
 title: "Project set-up"
 date: 2021-01-22
 type: post
+weight: 100
 summary: "Code-based analysis should be managed as using a standard project set-up"
 ---
 
