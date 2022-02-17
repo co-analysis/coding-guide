@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>4. Version control on Analytical Coding Guide</title>
+    <title>Version control on Analytical Coding Guide</title>
     <link>https://co-analysis.github.io/coding-guide/version_control/</link>
-    <description>Recent content in 4. Version control on Analytical Coding Guide</description>
+    <description>Recent content in Version control on Analytical Coding Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://co-analysis.github.io/coding-guide/version_control/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use version control</title>
+      <link>https://co-analysis.github.io/coding-guide/version_control/why-version-control/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/version_control/why-version-control/</guid>
+      <description>You should version control your analytical projects using Git and GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Version control workflow</title>
+      <link>https://co-analysis.github.io/coding-guide/version_control/workflow/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/version_control/workflow/</guid>
+      <description>Getting and using Git and GitHub in your analytical workflow.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template "><head>
+  <meta charset="utf-8">
+  
+  
+  <title>Analytical Coding Guide | Use version control</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/govuk-frontend-4.0.0.min.css" rel="stylesheet">
+  
+
+  
+
+  <link href="https://co-analysis.github.io/coding-guide/css/dashboard-layout.css" rel="stylesheet">
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/font-override.css" rel="stylesheet">
+  
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/syntax.css" rel="stylesheet">
+
+  
+
+  <meta property="og:image" content="https://co-analysis.github.io/coding-guide/assets/images/govuk-opengraph-image.png">
+
+</head><body class="govuk-template__body js-enabled"><script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<header class="govuk-header " role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+
+        <div class="govuk-header__logo">
+            <a href="https://co-analysis.github.io/coding-guide/" class="govuk-header__link govuk-header__link--homepage">
+
+                
+
+                
+                <span class="govuk-header__product-name">Analytical Coding Guide</span>
+                
+
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<div class="govuk-width-container">
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                alpha
+            </strong>
+            <span class="govuk-phase-banner__text">
+                This is a new service – your <a class="govuk-link" href="https://github.com/co-analysis/coding-guide/issues/">feedback</a>
+                will
+                help us to improve it.
+            </span>
+        </p>
+    </div>
+</div>
+<div class="govuk-width-container ">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="dashboard-container">
+
+                <div class="dashboard-nav">
+<nav class="sidebar-nav">
+
+        
+        
+
+        
+
+        <ul class="govuk-list">
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/workflow/">Workflow</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/code_style/">Code style</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/functions/">Writing functions &amp; packages</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/output/">Output style</a>
+                </li>
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section nav-active-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/version_control/">Version control</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-item nav-active-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state "
+                                href="https://co-analysis.github.io/coding-guide/version_control/why-version-control/">Use version control</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/version_control/workflow/">Version control workflow</a></li>
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/assurance/">Assurance</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/technology/">Technology</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/reference/">Learning and reference materials</a>
+                </li>
+                
+                
+
+                
+
+                
+
+        </ul>
+
+        
+
+        <ul class="govuk-list nav-extra">
+
+                
+                <li class="nav-item nav-about"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/about/">About this guide</a></li>
+                
+
+                </a>
+
+        </ul>
+        
+
+</nav></div>
+                <div class="dashboard-content">
+
+
+<h1 class="govuk-heading-xl">Use version control</h1>
+
+
+<div class="govuk-body">
+
+    
+<h1 id="file-versions" class="govuk-heading-xl">File versions</h1>
+<p>People often save multiple versions of files in a project in the form <code>file_v2_corrected.R</code>, <code>file_v2_final.R</code> and <code>script_v2_final2.R</code> in an attempt to store the &lsquo;state&rsquo; of their work at given points.</p>
+<p>You should avoid this. At worst, it:</p>
+<ul>
+<li>isn&rsquo;t immediately clear what the latest file is</li>
+<li>is hard to keep track of the differences from file to file</li>
+<li>makes it difficult to track experimental developments</li>
+<li>bloats your project folder</li>
+<li>makes it harder for your colleagues to understand what&rsquo;s going on</li>
+</ul>
+<p>Above all, it might not be possible to revert to a given past state in the event of an error, or if you want to recover some functionality that you removed earlier.</p>
+<p>Instead, you should use a formalised version control system to deal with these issues and to improve collaboration with your colleagues.</p>
+
+<h1 id="git-and-github" class="govuk-heading-xl">Git and GitHub</h1>
+<p>In short, Git is popular software for version control that you install on your computer. GitHub is a website and cloud store for your version history that also lets you share and collaborate more easily.</p>
+<p>Git lets you store snapshots of a folder&rsquo;s state at any given time. You can provide a message to explain what a change was made and see who made that change and when. This means you only ever need to store one copy of any given file and let Git handle its version history. The &lsquo;paper trail&rsquo; can also be viewed so you can understand how a given file has been developed and so you can always revert to a previous state whenever you need to. Another nice feature is that you can store &lsquo;branches&rsquo; within Git: copies of the folder in which to safely develop new features without affecting your current, main working files. You can merge branches into your main, active folder if the code you&rsquo;ve developed is successful.</p>
+<p>GitHub is an online service that lets you store your Git version history in the cloud, while also adding a number of significant improvements to how you interact with your files and work with colleagues. For example, the site allows you to navigate your version history through a graphical user interface and visually inspect the changes side-by-side. It has a system for tracking issues, assigning team-mates to them and resolving them through a system of &lsquo;pull requests&rsquo; that allow others (or bots) to check the code before its accepted.</p>
+
+<h1 id="further-reading" class="govuk-heading-xl">Further reading</h1>
+<p><a href="https://happygitwithr.com/">https://happygitwithr.com/</a></p>
+<p>Excuse me, do you have a moment to talk about version control? (Bryan, 2017)
+<a href="https://peerj.com/preprints/3159/">https://peerj.com/preprints/3159/</a></p>
+<p>Software Carpentry
+<a href="https://swcarpentry.github.io/git-novice/">https://swcarpentry.github.io/git-novice/</a></p>
+
+
+</div>
+
+
+
+                </div>
+
+            </div>
+        </main>
+    </div><footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+        <div class="govuk-footer__meta">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+                <h2 class="govuk-visually-hidden">Support links</h2>
+                <ul class="govuk-footer__inline-list">
+
+                    
+
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/accessibility/">
+                            Accessibility
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/cookies/">
+                            Cookies
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        Built by <a class="govuk-footer__link" href="https://www.github.com/co-analysis">
+                            Cabinet Office Analysis &amp; Insight
+                        </a>
+                    </li>
+                    
+
+                </ul>
+
+                <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                    <path fill="currentColor"
+                        d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+                </svg>
+                <span class="govuk-footer__licence-description">
+                    All content is available under the
+                    <a class="govuk-footer__link"
+                        href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                        rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                </span>
+            </div>
+            <div class="govuk-footer__meta-item">
+                <a style="background-image:url(https://co-analysis.github.io/coding-guide/assets/images/govuk-crest.png);"
+                    class="govuk-footer__link govuk-footer__copyright-logo"
+                    href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">©
+                    Crown copyright </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+
+    function applyGOVUK(tag, govuk_class) {
+        var elements = document.querySelector("div.dashboard-content").getElementsByTagName(tag)
+
+        var i;
+        for (i = 0; i < elements.length; i++) {
+            if (elements[i].classList.contains("lntable") || elements[i].classList.contains("lntd")) {
+                null;
+            } else if (tag == "P" && (elements[i].classList.contains("govuk-body-l") || elements[i].classList.contains("govuk-body-s"))) {
+                null;
+            } else if (tag == "HR" && (elements[i].classList.contains("govuk-section-break"))) {
+                null;
+            } else {
+                elements[i].classList.add(govuk_class);
+            }
+
+        };
+
+    };
+
+     
+    applyGOVUK("P", "govuk-body");
+
+     
+    applyGOVUK("TABLE", "govuk-table");
+    applyGOVUK("CAPTION", "govuk-table__caption");
+    applyGOVUK("CAPTION", "govuk-table__caption--m");
+    applyGOVUK("TR", "govuk-table__row");
+    applyGOVUK("TD", "govuk-table__cell");
+    applyGOVUK("THEAD", "govuk-table__head");
+    applyGOVUK("TH", "govuk-table__header");
+
+     
+    applyGOVUK("BLOCKQUOTE", "govuk-inset-text");
+    applyGOVUK("STRONG", "govuk-!-font-weight-bold");
+    applyGOVUK("B", "govuk-!-font-weight-bold");
+
+     
+    applyGOVUK("UL", "govuk-list");
+    applyGOVUK("UL", "govuk-list--bullet");
+    applyGOVUK("OL", "govuk-list");
+    applyGOVUK("OL", "govuk-list--number");
+
+     
+    applyGOVUK("HR", "govuk-section-break--l");
+    applyGOVUK("HR", "govuk-section-break");
+
+     
+    function styleCodeBlocks() {
+        var code_elements = document.querySelectorAll("div.highlight")
+        var i;
+
+        for (i = 0; i < code_elements.length; i++) {
+            code_elements[i].classList.add("govuk-body");
+        };
+    };
+    styleCodeBlocks();
+
+     
+    function restyleTOC() {
+
+        var toc_elements = document.querySelectorAll("#page_toc #TableOfContents ul")
+
+        var i;
+
+        for (i = 0; i < toc_elements.length; i++) {
+            toc_elements[i].classList.remove("govuk-list");
+            toc_elements[i].classList.remove("govuk-list--bullet");
+            toc_elements[i].classList.add("toc-list");
+
+        };
+
+        var toc_links = document.querySelectorAll("#page_toc #TableOfContents a")
+
+        for (i = 0; i < toc_links.length; i++) {
+            toc_links[i].classList.add("toc-link");
+        };
+
+    };
+    restyleTOC();
+
+    
+
+</script></body>
+
+</html>

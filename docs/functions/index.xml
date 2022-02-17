@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>3. Writing functions &amp; packages on Analytical Coding Guide</title>
+    <title>Writing functions &amp; packages on Analytical Coding Guide</title>
     <link>https://co-analysis.github.io/coding-guide/functions/</link>
-    <description>Recent content in 3. Writing functions &amp; packages on Analytical Coding Guide</description>
+    <description>Recent content in Writing functions &amp; packages on Analytical Coding Guide</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://co-analysis.github.io/coding-guide/functions/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why functions?</title>
+      <link>https://co-analysis.github.io/coding-guide/functions/why_functions/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/functions/why_functions/</guid>
+      <description>You should replace repetitive code with functions to help minimise errors.</description>
+    </item>
+    
+    <item>
+      <title>Writing good functions</title>
+      <link>https://co-analysis.github.io/coding-guide/functions/good_functions/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/functions/good_functions/</guid>
+      <description>Write simple functions that are easy for you and your colleagues to understand.</description>
+    </item>
+    
+    <item>
+      <title>Writing packages</title>
+      <link>https://co-analysis.github.io/coding-guide/functions/package_requirements/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/functions/package_requirements/</guid>
+      <description>Put multiple functions into a package for greater code reproducibility and improved documentation.</description>
+    </item>
+    
   </channel>
 </rss>

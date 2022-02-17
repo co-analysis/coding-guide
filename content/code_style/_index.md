@@ -1,7 +1,8 @@
 ---
-title: "2. Code style"
+title: "Code style"
 date: 2021-01-22
 listpages: true
+weight: 200
 ---
 
 Everyone will write code their own way, and some languages are more prescriptive than others about their approach and conventions.

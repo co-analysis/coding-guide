@@ -17,12 +17,30 @@
     </item>
     
     <item>
+      <title>Project set-up</title>
+      <link>https://co-analysis.github.io/coding-guide/workflow/projects/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/workflow/projects/</guid>
+      <description>Code-based analysis should be managed as using a standard project set-up</description>
+    </item>
+    
+    <item>
       <title>Quality assurance</title>
       <link>https://co-analysis.github.io/coding-guide/assurance/qa/</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://co-analysis.github.io/coding-guide/assurance/qa/</guid>
       <description>QA summary goes here</description>
+    </item>
+    
+    <item>
+      <title>README</title>
+      <link>https://co-analysis.github.io/coding-guide/workflow/write_readmes/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/workflow/write_readmes/</guid>
+      <description>All projects should have a README</description>
     </item>
     
     <item>
@@ -62,6 +80,60 @@
     </item>
     
     <item>
+      <title>Reproducible Analytical Pipelines</title>
+      <link>https://co-analysis.github.io/coding-guide/workflow/rap/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/workflow/rap/</guid>
+      <description>Our advice on implementing Reproducible Analytical Pipelines in the Cabinet Office</description>
+    </item>
+    
+    <item>
+      <title>Use version control</title>
+      <link>https://co-analysis.github.io/coding-guide/version_control/why-version-control/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/version_control/why-version-control/</guid>
+      <description>You should version control your analytical projects using Git and GitHub.</description>
+    </item>
+    
+    <item>
+      <title>Version control workflow</title>
+      <link>https://co-analysis.github.io/coding-guide/version_control/workflow/</link>
+      <pubDate>Mon, 08 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/version_control/workflow/</guid>
+      <description>Getting and using Git and GitHub in your analytical workflow.</description>
+    </item>
+    
+    <item>
+      <title>Why functions?</title>
+      <link>https://co-analysis.github.io/coding-guide/functions/why_functions/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/functions/why_functions/</guid>
+      <description>You should replace repetitive code with functions to help minimise errors.</description>
+    </item>
+    
+    <item>
+      <title>Writing good functions</title>
+      <link>https://co-analysis.github.io/coding-guide/functions/good_functions/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/functions/good_functions/</guid>
+      <description>Write simple functions that are easy for you and your colleagues to understand.</description>
+    </item>
+    
+    <item>
+      <title>Writing packages</title>
+      <link>https://co-analysis.github.io/coding-guide/functions/package_requirements/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://co-analysis.github.io/coding-guide/functions/package_requirements/</guid>
+      <description>Put multiple functions into a package for greater code reproducibility and improved documentation.</description>
+    </item>
+    
+    <item>
       <title>Accessibility statement</title>
       <link>https://co-analysis.github.io/coding-guide/accessibility/</link>
       <pubDate>Tue, 02 Feb 2021 00:00:00 +0000</pubDate>
@@ -87,24 +159,6 @@
       
       <guid>https://co-analysis.github.io/coding-guide/about/</guid>
       <description>About page</description>
-    </item>
-    
-    <item>
-      <title>Project set-up</title>
-      <link>https://co-analysis.github.io/coding-guide/workflow/projects/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://co-analysis.github.io/coding-guide/workflow/projects/</guid>
-      <description>Code-based analysis should be managed as using a standard project set-up</description>
-    </item>
-    
-    <item>
-      <title>Reproducible Analytical Pipelines</title>
-      <link>https://co-analysis.github.io/coding-guide/workflow/rap/</link>
-      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://co-analysis.github.io/coding-guide/workflow/rap/</guid>
-      <description>Our advice on implementing Reproducible Analytical Pipelines in the Cabinet Office</description>
     </item>
     
   </channel>

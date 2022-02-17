@@ -1,6 +1,7 @@
 ---
-title: "6. Technology"
+title: "Technology"
 date: 2021-01-22
+weight: 700
 listpages: true
 ---
 

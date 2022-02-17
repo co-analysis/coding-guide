@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en" class="govuk-template "><head>
+  <meta charset="utf-8">
+  
+  
+  <title>Analytical Coding Guide | Writing packages</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b0c0c">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+
+  
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/govuk-frontend-4.0.0.min.css" rel="stylesheet">
+  
+
+  
+
+  <link href="https://co-analysis.github.io/coding-guide/css/dashboard-layout.css" rel="stylesheet">
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/font-override.css" rel="stylesheet">
+  
+
+  
+  <link href="https://co-analysis.github.io/coding-guide/css/syntax.css" rel="stylesheet">
+
+  
+
+  <meta property="og:image" content="https://co-analysis.github.io/coding-guide/assets/images/govuk-opengraph-image.png">
+
+</head><body class="govuk-template__body js-enabled"><script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<header class="govuk-header " role="banner" data-module="govuk-header">
+    <div class="govuk-header__container govuk-width-container">
+
+        <div class="govuk-header__logo">
+            <a href="https://co-analysis.github.io/coding-guide/" class="govuk-header__link govuk-header__link--homepage">
+
+                
+
+                
+                <span class="govuk-header__product-name">Analytical Coding Guide</span>
+                
+
+            </a>
+        </div>
+
+    </div>
+</header>
+
+
+<div class="govuk-width-container">
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                alpha
+            </strong>
+            <span class="govuk-phase-banner__text">
+                This is a new service – your <a class="govuk-link" href="https://github.com/co-analysis/coding-guide/issues/">feedback</a>
+                will
+                help us to improve it.
+            </span>
+        </p>
+    </div>
+</div>
+<div class="govuk-width-container ">
+        <main class="govuk-main-wrapper " id="main-content" role="main">
+            <div class="dashboard-container">
+
+                <div class="dashboard-nav">
+<nav class="sidebar-nav">
+
+        
+        
+
+        
+
+        <ul class="govuk-list">
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/workflow/">Workflow</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/code_style/">Code style</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section nav-active-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/functions/">Writing functions &amp; packages</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/functions/why_functions/">Why functions?</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/functions/good_functions/">Writing good functions</a></li>
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-item nav-active-item"><a
+                                class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state "
+                                href="https://co-analysis.github.io/coding-guide/functions/package_requirements/">Writing packages</a></li>
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/output/">Output style</a>
+                </li>
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/version_control/">Version control</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/assurance/">Assurance</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/technology/">Technology</a>
+                </li>
+                
+                
+
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+                
+
+                
+
+                
+                
+
+                
+
+                
+
+                
+
+                
+                <li class="nav-section"><a class="govuk-!-font-size-16" href="https://co-analysis.github.io/coding-guide/reference/">Learning and reference materials</a>
+                </li>
+                
+                
+
+                
+
+                
+
+        </ul>
+
+        
+
+        <ul class="govuk-list nav-extra">
+
+                
+                <li class="nav-item nav-about"><a class="govuk-!-font-size-14 govuk-link govuk-link--no-visited-state"
+                                href="https://co-analysis.github.io/coding-guide/about/">About this guide</a></li>
+                
+
+                </a>
+
+        </ul>
+        
+
+</nav></div>
+                <div class="dashboard-content">
+
+
+<h1 class="govuk-heading-xl">Writing packages</h1>
+
+
+<div class="govuk-body">
+
+    
+<h1 id="package-recap" class="govuk-heading-xl">Package recap</h1>
+<p>At its simplest, an R package is just a folder that contains your functions. In reality, there are some conventions about the structure and content of such a folder that designates it as a &lsquo;package&rsquo;.</p>
+<p>Packages are beneficial because they:</p>
+<ul>
+<li>let you store all your functions in one place</li>
+<li>encourage good documentation</li>
+<li>make your code more shareable</li>
+<li>make it easier to test and debug your code</li>
+<li>standardise the form and storage of your code</li>
+</ul>
+<p>It also means that your projects can be more succinct because you don&rsquo;t have to keep specifying function code as part of your analytical scripts; you can just attach the package as part of your workflow and have access to all its functions.</p>
+<p>You should refer to <a href="https://r-pkgs.org/" class="govuk-link"  target="_blank" rel="noreferrer noopener">the R Packages book by Hadley Wickham and Jenny Bryan</a> for specific information on package creation and maintenance.</p>
+
+<h1 id="when-to-package" class="govuk-heading-xl">When to package</h1>
+<p>If you have several functions that all contribute to a particular workflow or project, and are likely to be reused for other projects, you should consider creating a package.</p>
+<p>Typically, you&rsquo;ll know ahead of time if a package is necessary. For example, if you have a periodically-released publication on GOV.UK. You will need functions that read, wrangle and prepare output documents for that specific publication and will want to re-run them in future when the next release is due for publication</p>
+<p>You may also start to develop a script-based analysis that eventually has a large number of functions. Storing these in a package can make them easier to manage, with the added benefit of making them more readily available for other analyses.</p>
+
+<h1 id="package-making-tools" class="govuk-heading-xl">Package-making tools</h1>
+<p>You should use <a href="https://usethis.r-lib.org/" class="govuk-link"  target="_blank" rel="noreferrer noopener">the {usethis} package</a> to simplify and standardise package construction.</p>
+<p>It contains many convenience functions for creating your own package. For example, <code>create_package()</code> to generate a folder with the minimal file requirements; <code>use_r()</code> to create in the correct location a script file for your functions; <code>use_testthat()</code> to set up the structure for tests and <code>use_test()</code> to create a test script in the correct location.</p>
+
+<h1 id="what-to-include" class="govuk-heading-xl">What to include</h1>
+<p>Running <code>create_package()</code> generates a package folder with the minimal required content. There are three parts that you should concern yourself with:</p>
+<ol>
+<li>In the <code>DESCRIPTION</code> file you should complete the metadata for the package name, title and description, as well as the authors' names</li>
+<li>You should add your functions in R scripts to the <code>R/</code> folder (use <code>use_r()</code> to generate an empty R script in the correct location), with one script per &lsquo;group&rsquo; of functions (e.g. one containing functions that clean the data, one for plotting functions, etc)</li>
+<li>Update the <code>.gitignore</code> to prevent you from committing certain files to Git (more about this in <a href="" class="govuk-link" >the version control section</a>)</li>
+</ol>
+<p>You should add some other files too:</p>
+<ol>
+<li>Add a README with <code>use_readme_rmd()</code>, which is where you explain the purpose of your package, provide some examples, etc</li>
+<li>Provide an MIT license (as per <a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable" class="govuk-link"  target="_blank" rel="noreferrer noopener">the Service Manual</a>) for the code with <code>use_mit_license()</code></li>
+</ol>
+
+<h1 id="documentation" class="govuk-heading-xl">Documentation</h1>
+
+<h2 id="functions" class="govuk-heading-l">Functions</h2>
+<p>You should document all your functions. This will allow users to understand how each function works without you needing to explain it. This will make our code more sustainable because the knowledge of how to operate it is stored alongside the functions, rather than in the author&rsquo;s brain.</p>
+<p>It is convention to use {roxygen2} to write documentation for the functions in your package. It lets you write special comments in a particular format that is automatically converted to provide user-side documentation.</p>
+<p>In the {roxygen2} documentation you must include the function name and short description; an explanation of each argument via <code>@param</code>, their defaults and accepted classes; and at least one <code>@example</code> of the functions use (which you can wrap in <code>\dontrun{}}</code> if appropriate]).</p>
+
+<h2 id="readme-and-vignettes" class="govuk-heading-l">README and vignettes</h2>
+<p>The README is important: it should make it obvious to your colleagues what the package does and how to use it without having to delve any further into the package. It should be structured and written clearly and succinctly. Ideally you&rsquo;ll include any motivations, caveats and links to further materials as necessary.</p>
+<p>For larger packages with a lot of functionality, or with lots of functions that might interact in a workflow, you should add a &lsquo;vignette&rsquo;. A vignette is a standalone document that shows how the package works with practical examples. You can add one with <code>use_vignette()</code>.</p>
+
+<h2 id="naming" class="govuk-heading-l">Naming</h2>
+<p>The name of your package should be informative, like how the {cspsdata} package is for handling Civil Service People Survey data. Uppercase and periods are allowed in package names, but you should use all-lowercase where possible. You can use the <code>available()</code> function from the available package to help decide if the name is appropriate and to see if there&rsquo;s already a package with that name on CRAN already. You should use a name that doesn&rsquo;t clash with other packages&ndash;published or not&ndash; wherever possible.</p>
+<p>Function naming is descibed in <a href="" class="govuk-link" >the functions section</a>, but you may wish to add a prefix to functions in a package, which helps with tabbed autocomplete and signals to people reading your code where the function has come from. For example, functions in the {stringr} package start with <code>str_</code>, like <code>str_remove()</code>.</p>
+
+
+</div>
+
+
+
+                </div>
+
+            </div>
+        </main>
+    </div><footer class="govuk-footer " role="contentinfo">
+    <div class="govuk-width-container ">
+        <div class="govuk-footer__meta">
+            <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+                <h2 class="govuk-visually-hidden">Support links</h2>
+                <ul class="govuk-footer__inline-list">
+
+                    
+
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/accessibility/">
+                            Accessibility
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        <a class="govuk-footer__link" href="https://co-analysis.github.io/coding-guide/cookies/">
+                            Cookies
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    
+                    <li class="govuk-footer__inline-list-item">
+                        Built by <a class="govuk-footer__link" href="https://www.github.com/co-analysis">
+                            Cabinet Office Analysis &amp; Insight
+                        </a>
+                    </li>
+                    
+
+                </ul>
+
+                <svg aria-hidden="true" focusable="false" class="govuk-footer__licence-logo"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.2 195.7" height="17" width="41">
+                    <path fill="currentColor"
+                        d="M421.5 142.8V.1l-50.7 32.3v161.1h112.4v-50.7zm-122.3-9.6A47.12 47.12 0 0 1 221 97.8c0-26 21.1-47.1 47.1-47.1 16.7 0 31.4 8.7 39.7 21.8l42.7-27.2A97.63 97.63 0 0 0 268.1 0c-36.5 0-68.3 20.1-85.1 49.7A98 98 0 0 0 97.8 0C43.9 0 0 43.9 0 97.8s43.9 97.8 97.8 97.8c36.5 0 68.3-20.1 85.1-49.7a97.76 97.76 0 0 0 149.6 25.4l19.4 22.2h3v-87.8h-80l24.3 27.5zM97.8 145c-26 0-47.1-21.1-47.1-47.1s21.1-47.1 47.1-47.1 47.2 21 47.2 47S123.8 145 97.8 145" />
+                </svg>
+                <span class="govuk-footer__licence-description">
+                    All content is available under the
+                    <a class="govuk-footer__link"
+                        href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+                        rel="license">Open Government Licence v3.0</a>, except where otherwise stated
+                </span>
+            </div>
+            <div class="govuk-footer__meta-item">
+                <a style="background-image:url(https://co-analysis.github.io/coding-guide/assets/images/govuk-crest.png);"
+                    class="govuk-footer__link govuk-footer__copyright-logo"
+                    href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">©
+                    Crown copyright </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript">
+
+    function applyGOVUK(tag, govuk_class) {
+        var elements = document.querySelector("div.dashboard-content").getElementsByTagName(tag)
+
+        var i;
+        for (i = 0; i < elements.length; i++) {
+            if (elements[i].classList.contains("lntable") || elements[i].classList.contains("lntd")) {
+                null;
+            } else if (tag == "P" && (elements[i].classList.contains("govuk-body-l") || elements[i].classList.contains("govuk-body-s"))) {
+                null;
+            } else if (tag == "HR" && (elements[i].classList.contains("govuk-section-break"))) {
+                null;
+            } else {
+                elements[i].classList.add(govuk_class);
+            }
+
+        };
+
+    };
+
+     
+    applyGOVUK("P", "govuk-body");
+
+     
+    applyGOVUK("TABLE", "govuk-table");
+    applyGOVUK("CAPTION", "govuk-table__caption");
+    applyGOVUK("CAPTION", "govuk-table__caption--m");
+    applyGOVUK("TR", "govuk-table__row");
+    applyGOVUK("TD", "govuk-table__cell");
+    applyGOVUK("THEAD", "govuk-table__head");
+    applyGOVUK("TH", "govuk-table__header");
+
+     
+    applyGOVUK("BLOCKQUOTE", "govuk-inset-text");
+    applyGOVUK("STRONG", "govuk-!-font-weight-bold");
+    applyGOVUK("B", "govuk-!-font-weight-bold");
+
+     
+    applyGOVUK("UL", "govuk-list");
+    applyGOVUK("UL", "govuk-list--bullet");
+    applyGOVUK("OL", "govuk-list");
+    applyGOVUK("OL", "govuk-list--number");
+
+     
+    applyGOVUK("HR", "govuk-section-break--l");
+    applyGOVUK("HR", "govuk-section-break");
+
+     
+    function styleCodeBlocks() {
+        var code_elements = document.querySelectorAll("div.highlight")
+        var i;
+
+        for (i = 0; i < code_elements.length; i++) {
+            code_elements[i].classList.add("govuk-body");
+        };
+    };
+    styleCodeBlocks();
+
+     
+    function restyleTOC() {
+
+        var toc_elements = document.querySelectorAll("#page_toc #TableOfContents ul")
+
+        var i;
+
+        for (i = 0; i < toc_elements.length; i++) {
+            toc_elements[i].classList.remove("govuk-list");
+            toc_elements[i].classList.remove("govuk-list--bullet");
+            toc_elements[i].classList.add("toc-list");
+
+        };
+
+        var toc_links = document.querySelectorAll("#page_toc #TableOfContents a")
+
+        for (i = 0; i < toc_links.length; i++) {
+            toc_links[i].classList.add("toc-link");
+        };
+
+    };
+    restyleTOC();
+
+    
+
+</script></body>
+
+</html>
